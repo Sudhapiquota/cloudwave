@@ -1,0 +1,67 @@
+/* @font-face {
+  font-family: "Gordita";
+  src: url("../public/assets/fonts/gordita-ultra.otf");
+  font-weight: 1100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../public/assets/fonts/gordita-black.otf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../public/assets/fonts/gordita-bold.otf");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("../public/assets/fonts/gordita-medium.otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../public/assets/fonts/gordita-regular.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("../public/assets/fonts/gordita-light.otf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../public/assets/fonts/gordita-thin.otf");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+} */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
