@@ -714,7 +714,6 @@
 		-ms-transform: translateY(20px);
 		transform: translateY(20px);
 	}
-
 	.searchbar {
 		line-height: 60px;
 		margin-left: 25px;
@@ -730,14 +729,17 @@
 		text-align: center;
 		color: #fff;
 	}
-
 	.container-fluid {
 		padding-left: 110px;
 		padding-right: 110px;
 	}
 	.blog-container.container-fluid {
-		padding-left: 140px;
-		padding-right: 140px;
+		padding-left: 180px;
+		padding-right: 180px;
+	}
+	.blog-container.container-fluid .card-body p {
+		font-size: 20px;
+		line-height: 34px;
 	}
 }
 
@@ -809,6 +811,7 @@
 	animation-name: reveal;
 	animation-direction: reverse
 }
+
 
 @keyframes reveal {
 	from {
