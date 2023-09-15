@@ -2842,7 +2842,7 @@ html.menu-opened body {
 
 .cloud-card-content img {
 	margin: auto;
-	width: 250px;
+	width: 200px;
 
 }
 
@@ -3679,7 +3679,12 @@ html.menu-opened body {
 .sales-sec-img img {
 	width: 100px;
 }
-
+.cons-sec.process-section .card-body h4 {
+	font-size: 18px;
+}
+.cons-sec .sales-sec-img img {
+	width: 80px;
+}
 .sales-sec-img2 img {
 	height: 50%;
 	width: 50%;
@@ -4026,7 +4031,7 @@ SpaceBooking
 @media only screen and (max-width: 1366.98px) {
 
 	.explore-our-product-slider .card {
-		min-height: 49em;
+		min-height: 50em;
 	}
 
 	.row.row-grid {
@@ -4064,8 +4069,8 @@ SpaceBooking
 	}
 
 	.explore-our-product-slider .card img {
-		height: 250px;
-		width: 250px;
+		height: 200px;
+		width: 200px;
 		margin: auto;
 	}
 
