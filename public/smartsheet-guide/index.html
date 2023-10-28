@@ -931,12 +931,24 @@
 	<!-- Custom JS -->
 	<script src="../assets/js/header.js"></script>
 	<script src="../assets/js/script.js"></script>
-	
+
 	<!--Download PDF-->
-	<script>
+	<!--<script>
 		var pdfPath = "../assets/doc/The-Ultimate-Smartsheet-Guide.pdf";
 		$('#downloadForm').on('submit', function () {
-			window.open(pdfPath, '_blank');
+			window.open(pdfPath);
+		});
+	</script>-->
+
+	<script type="text/javascript">
+		
+		document.getElementById('downloadForm').addEventListener('submit', function(event) {
+			event.preventDefault(); 
+
+			var name = document.getElementById('Name').value;
+			var email = document.getElementById('InputEmail').value;
+			var ebookUrl = '../assets/doc/The-Ultimate-Smartsheet-Guide.pdf';
+			window.open(ebookUrl, '_blank');
 		});
 	</script>
 	<!--/Download PDF-->
