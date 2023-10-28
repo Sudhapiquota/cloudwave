@@ -942,8 +942,8 @@
 
 	<script type="text/javascript">
 		
-		document.getElementById('submitButton').addEventListener('click', function() {
-
+		document.getElementById('downloadForm').addEventListener('submit', function(e) {
+			e.preventDefault();
 			var name = document.getElementById('Name').value;
 			var email = document.getElementById('InputEmail').value;
 			var ebookUrl = '../assets/doc/The-Ultimate-Smartsheet-Guide.pdf';
