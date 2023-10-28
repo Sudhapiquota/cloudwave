@@ -214,7 +214,7 @@
 								  <label for="InputEmail">Email</label>
 								  <input type="email" class="form-control form-input" id="InputEmail" required>
 								</div>
-								<button type="submit" class="btn btn-block btn-primary"><strong>Download My Copy</strong></button>
+								<button type="submit" class="btn btn-block btn-primary" id="submitButton"><strong>Download My Copy</strong></button>
 							  </form>
 						</div>
 					</div>
@@ -942,13 +942,15 @@
 
 	<script type="text/javascript">
 		
-		document.getElementById('downloadForm').addEventListener('submit', function(event) {
-			event.preventDefault(); 
+		document.getElementById('submitButton').addEventListener('click', function() {
 
 			var name = document.getElementById('Name').value;
 			var email = document.getElementById('InputEmail').value;
 			var ebookUrl = '../assets/doc/The-Ultimate-Smartsheet-Guide.pdf';
-			window.open(ebookUrl, '_blank');
+			var downloadLink = document.createElement('a');
+			downloadLink.href = ebookUrl;
+			downloadLink.download = 'smartsheet-guide.pdf';
+			downloadLink.click();
 		});
 	</script>
 	<!--/Download PDF-->
