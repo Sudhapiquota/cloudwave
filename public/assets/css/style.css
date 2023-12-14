@@ -3151,6 +3151,16 @@ html.menu-opened body {
 .smartsheet-intergration .section-header h2 {
 	margin-bottom: 50px;
 }
+/*--------------------------------
+	CW AI
+---------------------------------*/
+.cw-ai-banner {
+	background: url(../img/AWS-Page-Cover.png) !important;
+	background-repeat: no-repeat;
+	background-size: 100% 400px;
+	background-position: center;
+	/* padding-top: 20px; */
+}
 
 /*---------------------------------
 	Cloud Integration
