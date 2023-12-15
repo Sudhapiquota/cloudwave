@@ -3155,9 +3155,10 @@ html.menu-opened body {
 	CW AI
 ---------------------------------*/
 .cw-ai-banner {
-	background: url(../img/AWS-Page-Cover.png) !important;
+	background: url(../img/AI-Page-Cover.png) !important;
 	background-repeat: no-repeat;
 	background-size: 100% 400px;
+	background-size: cover !important;
 	background-position: center;
 	/* padding-top: 20px; */
 }
