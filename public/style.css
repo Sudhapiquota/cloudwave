@@ -1,0 +1,7163 @@
+
+/*============================
+ [Table of CSS]
+
+1. General
+2. Table
+3. Bootstrap Classes
+4. Avatar
+5. Select2
+6. Nav Tabs
+7. Components
+8. Focus Label
+9. Login
+10. Header
+11. Home
+12. Footer
+13. Mobile Menu
+14. Search
+15. Slick Slider
+16. Responsive
+
+========================================*/
+
+/*-----------------
+	1. General
+-----------------------*/
+
+@font-face {
+	font-family: 'Gordita';
+	src: url('../fonts/gordita-ultra-webfont.woff2') format('woff2'),
+		url('../fonts/gordita-ultra-webfont.woff') format('woff');
+	font-weight: 1100;
+	font-display: block;
+
+}
+
+@font-face {
+	font-family: 'Gordita';
+	src: url('../fonts/gordita-black-webfont.woff2') format('woff2'),
+		url('../fonts/gordita-black-webfont.woff') format('woff');
+	font-weight: 900;
+	font-display: block;
+
+}
+
+@font-face {
+	font-family: 'Gordita';
+	src: url('../fonts/gordita-bold-webfont.woff2') format('woff2'),
+		url('../fonts/gordita-bold-webfont.woff') format('woff');
+	font-weight: 800;
+	font-display: block;
+
+}
+
+@font-face {
+	font-family: 'Gordita';
+	src: url('../fonts/gordita-medium-webfont.woff2') format('woff2'),
+		url('../fonts/gordita-medium-webfont.woff') format('woff');
+	font-weight: 500;
+	font-display: block;
+
+}
+
+@font-face {
+	font-family: 'Gordita';
+	src: url('../fonts/gordita-regular-webfont.woff2') format('woff2'),
+		url('../fonts/gordita-regular-webfont.woff') format('woff');
+	font-weight: 400;
+	font-display: block;
+
+}
+
+@font-face {
+	font-family: 'Gordita';
+	src: url('../fonts/gordita-light-webfont.woff2') format('woff2'),
+		url('../fonts/gordita-light-webfont.woff') format('woff');
+	font-weight: 300;
+	font-display: block;
+
+}
+
+@font-face {
+	font-family: 'Gordita';
+	src: url('../fonts/gordita-thin-webfont.woff2') format('woff2'),
+		url('../fonts/gordita-thin-webfont.woff') format('woff');
+	font-weight: 100;
+	font-display: block;
+
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #fff;
+	color: #102A4C;
+	font-family: "Gordita";
+	font-size: 14px;
+	height: 100%;
+	overflow-x: hidden;
+	font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #102A4C;
+	font-weight: 500;
+}
+
+.h1,
+h1 {
+	font-size: 2.25rem;
+}
+
+.h2,
+h2 {
+	font-size: 1.875rem;
+}
+
+.h3,
+h3 {
+	font-size: 1.5rem;
+}
+
+.h4,
+h4 {
+	font-size: 1.125rem;
+}
+
+.mt-h2>h2 {
+	margin-top: 30px;
+}
+
+.h5,
+h5 {
+	font-size: 1rem;
+}
+
+.h6,
+h6 {
+	font-size: 0.875rem;
+}
+
+a {
+	color: inherit;
+}
+
+a:hover {
+	color: var(--clr-blue);
+}
+
+a:hover,
+a:active,
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+.pad {
+	padding: 0.375rem 2.75rem;
+}
+
+button {
+	font-weight: 300 !important;
+}
+
+input,
+button,
+a {
+	transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+}
+
+ul {
+	padding: 0;
+	margin-bottom: 0;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+button:focus {
+	outline: 0;
+}
+
+input[type="text"],
+input[type="password"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.btn.focus,
+.btn:focus {
+	-webkit-box-shadow: inherit;
+	        box-shadow: inherit;
+}
+
+.form-control {
+	border-color: #dcdcdc;
+	background-color: #dcdcdc;
+	color: #102A4C;
+	font-size: 15px;
+	min-height: 70px;
+	padding: 6px 15px;
+	border-radius: 0;
+}
+
+.slick-arrow.slick-disabled {
+	display: none !important;
+}
+a.disable-link {
+	pointer-events: none;
+	cursor: default;
+}
+.table .form-control {
+	font-size: 14px;
+	min-height: 38px;
+}
+
+.form-control::-webkit-input-placeholder {
+	color: #102A4C;
+	font-size: 14px;
+}
+
+.form-control::-moz-placeholder {
+	color: #102A4C;
+	font-size: 14px;
+}
+
+.form-control:-ms-input-placeholder {
+	color: #102A4C;
+	font-size: 14px;
+}
+
+.form-control::-ms-input-placeholder {
+	color: #102A4C;
+	font-size: 14px;
+}
+
+.form-control::placeholder {
+	color: #102A4C;
+	font-size: 14px;
+}
+
+.list-group-item {
+	border: 1px solid #f0f0f0;
+}
+
+.content {
+	min-height: 200px;
+	padding: 30px 0 0;
+}
+
+figure {
+	margin: 0;
+}
+
+:root {
+	--clr-yellow: #ffb801;
+	--clr-rose: #62AAD0;
+	--clr-blue: #102A4C;
+	--clr-cyan: #62AAD0;
+}
+
+/*-----------------
+	2. Table
+-----------------------*/
+
+.table {
+	color: #102A4C;
+	max-width: 100%;
+	margin-bottom: 0;
+	width: 100%;
+}
+
+.table-striped>tbody>tr:nth-of-type(2n + 1) {
+	background-color: #f8f9fa;
+}
+
+.table.no-border>tbody>tr>td,
+.table>tbody>tr>th,
+.table.no-border>tfoot>tr>td,
+.table.no-border>tfoot>tr>th,
+.table.no-border>thead>tr>td,
+.table.no-border>thead>tr>th {
+	border-top: 0;
+	padding: 10px 8px;
+}
+
+.table-nowrap td,
+.table-nowrap th {
+	white-space: nowrap;
+}
+
+.table.dataTable {
+	border-collapse: collapse !important;
+}
+
+table.table td h2 {
+	display: inline-block;
+	font-size: inherit;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+
+table.table td h2.table-avatar {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	font-size: inherit;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+table.table td h2 a {
+	color: #102A4C;
+}
+
+table.table td h2 a:hover {
+	color: #62AAD0;
+}
+
+table.table td h2 span {
+	color: #888;
+	display: block;
+	font-size: 12px;
+	margin-top: 3px;
+}
+
+.table thead {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.table thead tr th {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.table tbody tr {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.table tbody tr:last-child {
+	border-color: transparent;
+}
+
+.table.table-center td,
+.table.table-center th {
+	vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+	background-color: #f7f7f7;
+}
+
+.table-hover tbody tr:hover td {
+	color: #474648;
+}
+
+.table-striped thead tr {
+	border-color: transparent;
+}
+
+.table-striped tbody tr {
+	border-color: transparent;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+	background-color: rgba(235, 235, 235, 0.4);
+}
+
+.table-bordered {
+	border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.table-bordered th,
+.table-bordered td {
+	border-color: rgba(0, 0, 0, 0.05);
+}
+
+.card-table .card-body {
+	padding: 0;
+}
+
+.card-table .card-body .table>thead>tr>th {
+	border-top: 0;
+}
+
+.card-table .table tr td:first-child,
+.card-table .table tr th:first-child {
+	padding-left: 1.5rem;
+}
+
+.card-table .table tr td:last-child,
+.card-table .table tr th:last-child {
+	padding-right: 1.5rem;
+}
+
+.card-table .table td,
+.card-table .table th {
+	border-top: 1px solid #e2e5e8;
+	padding: 1rem 0.75rem;
+	white-space: nowrap;
+}
+
+/*-----------------
+	3. Bootstrap Classes
+-----------------------*/
+
+.btn.focus,
+.btn:focus {
+	-webkit-box-shadow: unset;
+	        box-shadow: unset;
+}
+
+.btn-white {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	color: #102A4C;
+}
+
+.btn.btn-rounded {
+	border-radius: 50px;
+}
+
+.bg-primary,
+.badge-primary {
+	background-color: #62AAD0 !important;
+}
+
+a.bg-primary:focus,
+a.bg-primary:hover,
+button.bg-primary:focus,
+button.bg-primary:hover {
+	background-color: #62AAD0 !important;
+}
+
+.bg-success,
+.badge-success {
+	background-color: #00e65b !important;
+}
+
+a.bg-success:focus,
+a.bg-success:hover,
+button.bg-success:focus,
+button.bg-success:hover {
+	background-color: #00cc52 !important;
+}
+
+.bg-info,
+.badge-info {
+	background-color: #62AAD0 !important;
+}
+
+a.bg-info:focus,
+a.bg-info:hover,
+button.bg-info:focus,
+button.bg-info:hover {
+	background-color: #028ee1 !important;
+}
+
+.bg-warning,
+.badge-warning {
+	background-color: #ffbc34 !important;
+}
+
+a.bg-warning:focus,
+a.bg-warning:hover,
+button.bg-warning:focus,
+button.bg-warning:hover {
+	background-color: #e9ab2e !important;
+}
+
+.bg-danger,
+.badge-danger {
+	background-color: #ff0100 !important;
+}
+
+a.bg-danger:focus,
+a.bg-danger:hover,
+button.bg-danger:focus,
+button.bg-danger:hover {
+	background-color: #e63333 !important;
+}
+
+.bg-white {
+	background-color: #fff;
+}
+
+.bg-purple,
+.badge-purple {
+	background-color: #9368e9 !important;
+}
+
+.text-primary,
+.dropdown-menu>li>a.text-primary {
+	color: #62AAD0 !important;
+}
+
+.text-success,
+.dropdown-menu>li>a.text-success {
+	color: #00cc52 !important;
+}
+
+.text-danger,
+.dropdown-menu>li>a.text-danger {
+	color: #ff0100 !important;
+}
+
+.text-info,
+.dropdown-menu>li>a.text-info {
+	color: #62AAD0 !important;
+}
+
+.text-warning,
+.dropdown-menu>li>a.text-warning {
+	color: #ffbc34 !important;
+}
+
+.text-purple,
+.dropdown-menu>li>a.text-purple {
+	color: #7460ee !important;
+}
+
+.text-muted {
+	color: #757575 !important;
+}
+
+.btn-primary {
+	background-color: #62AAD0;
+	border: 1px solid #62AAD0;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.active,
+.btn-primary:active,
+.open>.dropdown-toggle.btn-primary {
+	background-color: #62AAD0;
+	border: 1px solid #62AAD0;
+}
+
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary.focus:active,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open>.dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary:hover {
+	background-color: #62AAD0;
+	border: 1px solid #62AAD0;
+}
+
+.btn-primary.active:not(:disabled):not(.disabled),
+.btn-primary:active:not(:disabled):not(.disabled),
+.show>.btn-primary.dropdown-toggle {
+	background-color: #62AAD0;
+	border-color: #62AAD0;
+	color: #fff;
+}
+
+.btn-primary.active:focus:not(:disabled):not(.disabled),
+.btn-primary:active:focus:not(:disabled):not(.disabled),
+.show>.btn-primary.dropdown-toggle:focus {
+	-webkit-box-shadow: unset;
+	        box-shadow: unset;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+	background-color: #62AAD0;
+	border-color: #62AAD0;
+	color: #fff;
+}
+
+.btn-secondary {
+	color: #fff;
+	background-color: #62AAD0;
+	border-color: #62AAD0;
+	border-radius: 160px;
+	padding: 5px 20px;
+	font-size: 13px;
+	font-weight: 800;
+}
+
+.btn-secondary:hover {
+	color: #fff;
+	background-color: #62AAD0;
+	border-color: #62AAD0;
+}
+
+.btn-secondary.active:focus:not(:disabled):not(.disabled),
+.btn-secondary:active:focus:not(:disabled):not(.disabled),
+.show>.btn-secondary.dropdown-toggle:focus {
+	-webkit-box-shadow: unset;
+	        box-shadow: unset;
+}
+
+.btn-success {
+	background-color: #00e65b;
+	border: 1px solid #00e65b;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success.active,
+.btn-success:active,
+.open>.dropdown-toggle.btn-success {
+	background-color: #00cc52;
+	border: 1px solid #00cc52;
+	color: #fff;
+}
+
+.btn-success.active.focus,
+.btn-success.active:focus,
+.btn-success.active:hover,
+.btn-success.focus:active,
+.btn-success:active:focus,
+.btn-success:active:hover,
+.open>.dropdown-toggle.btn-success.focus,
+.open>.dropdown-toggle.btn-success:focus,
+.open>.dropdown-toggle.btn-success:hover {
+	background-color: #00cc52;
+	border: 1px solid #00cc52;
+}
+
+.btn-success.active:not(:disabled):not(.disabled),
+.btn-success:active:not(:disabled):not(.disabled),
+.show>.btn-success.dropdown-toggle {
+	background-color: #00cc52;
+	border-color: #00cc52;
+	color: #fff;
+}
+
+.btn-success.active:focus:not(:disabled):not(.disabled),
+.btn-success:active:focus:not(:disabled):not(.disabled),
+.show>.btn-success.dropdown-toggle:focus {
+	-webkit-box-shadow: unset;
+	        box-shadow: unset;
+}
+
+.btn-success.disabled,
+.btn-success:disabled {
+	background-color: #00e65b;
+	border-color: #00e65b;
+	color: #fff;
+}
+
+.btn-info {
+	background-color: #62AAD0;
+	border: 1px solid #62AAD0;
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info.active,
+.btn-info:active,
+.open>.dropdown-toggle.btn-info {
+	background-color: #028ee1;
+	border: 1px solid #028ee1;
+}
+
+.btn-info.active.focus,
+.btn-info.active:focus,
+.btn-info.active:hover,
+.btn-info.focus:active,
+.btn-info:active:focus,
+.btn-info:active:hover,
+.open>.dropdown-toggle.btn-info.focus,
+.open>.dropdown-toggle.btn-info:focus,
+.open>.dropdown-toggle.btn-info:hover {
+	background-color: #028ee1;
+	border: 1px solid #028ee1;
+}
+
+.btn-info.active:not(:disabled):not(.disabled),
+.btn-info:active:not(:disabled):not(.disabled),
+.show>.btn-info.dropdown-toggle {
+	background-color: #028ee1;
+	border-color: #028ee1;
+	color: #fff;
+}
+
+.btn-info.active:focus:not(:disabled):not(.disabled),
+.btn-info:active:focus:not(:disabled):not(.disabled),
+.show>.btn-info.dropdown-toggle:focus {
+	-webkit-box-shadow: unset;
+	        box-shadow: unset;
+}
+
+.btn-info.disabled,
+.btn-info:disabled {
+	background-color: #62AAD0;
+	border-color: #62AAD0;
+	color: #fff;
+}
+
+.btn-warning {
+	background-color: #ffbc34;
+	border: 1px solid #ffbc34;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning.active,
+.btn-warning:active,
+.open>.dropdown-toggle.btn-warning {
+	background-color: #e9ab2e;
+	border: 1px solid #e9ab2e;
+}
+
+.btn-warning.active.focus,
+.btn-warning.active:focus,
+.btn-warning.active:hover,
+.btn-warning.focus:active,
+.btn-warning:active:focus,
+.btn-warning:active:hover,
+.open>.dropdown-toggle.btn-warning.focus,
+.open>.dropdown-toggle.btn-warning:focus,
+.open>.dropdown-toggle.btn-warning:hover {
+	background-color: #e9ab2e;
+	border: 1px solid #e9ab2e;
+}
+
+.btn-warning.active:not(:disabled):not(.disabled),
+.btn-warning:active:not(:disabled):not(.disabled),
+.show>.btn-warning.dropdown-toggle {
+	background-color: #e9ab2e;
+	border-color: #e9ab2e;
+	color: #fff;
+}
+
+.btn-warning.active:focus:not(:disabled):not(.disabled),
+.btn-warning:active:focus:not(:disabled):not(.disabled),
+.show>.btn-warning.dropdown-toggle:focus {
+	-webkit-box-shadow: unset;
+	        box-shadow: unset;
+}
+
+.btn-warning.disabled,
+.btn-warning:disabled {
+	background-color: #ffbc34;
+	border-color: #ffbc34;
+	color: #fff;
+}
+
+.btn-danger {
+	background-color: #ff0100;
+	border: 1px solid #ff0100;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger.active,
+.btn-danger:active,
+.open>.dropdown-toggle.btn-danger {
+	background-color: #e63333;
+	border: 1px solid #e63333;
+}
+
+.btn-danger.active.focus,
+.btn-danger.active:focus,
+.btn-danger.active:hover,
+.btn-danger.focus:active,
+.btn-danger:active:focus,
+.btn-danger:active:hover,
+.open>.dropdown-toggle.btn-danger.focus,
+.open>.dropdown-toggle.btn-danger:focus,
+.open>.dropdown-toggle.btn-danger:hover {
+	background-color: #e63333;
+	border: 1px solid #e63333;
+}
+
+.btn-danger.active:not(:disabled):not(.disabled),
+.btn-danger:active:not(:disabled):not(.disabled),
+.show>.btn-danger.dropdown-toggle {
+	background-color: #e63333;
+	border-color: #e63333;
+	color: #fff;
+}
+
+.btn-danger.active:focus:not(:disabled):not(.disabled),
+.btn-danger:active:focus:not(:disabled):not(.disabled),
+.show>.btn-danger.dropdown-toggle:focus {
+	-webkit-box-shadow: unset;
+	        box-shadow: unset;
+}
+
+.btn-danger.disabled,
+.btn-danger:disabled {
+	background-color: #f62d51;
+	border-color: #f62d51;
+	color: #fff;
+}
+
+.btn-light.active:focus:not(:disabled):not(.disabled),
+.btn-light:active:focus:not(:disabled):not(.disabled),
+.show>.btn-light.dropdown-toggle:focus {
+	-webkit-box-shadow: unset;
+	        box-shadow: unset;
+}
+
+.btn-dark.active:focus:not(:disabled):not(.disabled),
+.btn-dark:active:focus:not(:disabled):not(.disabled),
+.show>.btn-dark.dropdown-toggle:focus {
+	-webkit-box-shadow: unset;
+	        box-shadow: unset;
+}
+
+.btn-outline-primary {
+	color: #62AAD0;
+	border-color: #62AAD0;
+}
+
+.btn-outline-primary:hover {
+	background-color: #62AAD0;
+	border-color: #62AAD0;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+	color: #62AAD0;
+	background-color: transparent;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show>.btn-outline-primary.dropdown-toggle {
+	background-color: #62AAD0;
+	border-color: #62AAD0;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.btn-outline-success {
+	color: #00e65b;
+	border-color: #00e65b;
+}
+
+.btn-outline-success:hover {
+	background-color: #00e65b;
+	border-color: #00e65b;
+}
+
+.btn-outline-success:focus,
+.btn-outline-success.focus {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.btn-outline-success.disabled,
+.btn-outline-success:disabled {
+	color: #00e65b;
+	background-color: transparent;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active,
+.btn-outline-success:not(:disabled):not(.disabled).active,
+.show>.btn-outline-success.dropdown-toggle {
+	background-color: #00e65b;
+	border-color: #00e65b;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active:focus,
+.btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-success.dropdown-toggle:focus {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.btn-outline-info {
+	color: #62AAD0;
+	border-color: #62AAD0;
+}
+
+.btn-outline-info:hover {
+	color: #fff;
+	background-color: #62AAD0;
+	border-color: #62AAD0;
+}
+
+.btn-outline-info:focus,
+.btn-outline-info.focus {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.btn-outline-info.disabled,
+.btn-outline-info:disabled {
+	background-color: transparent;
+	color: #62AAD0;
+}
+
+.btn-outline-info:not(:disabled):not(.disabled):active,
+.btn-outline-info:not(:disabled):not(.disabled).active,
+.show>.btn-outline-info.dropdown-toggle {
+	background-color: #62AAD0;
+	border-color: #62AAD0;
+}
+
+.btn-outline-info:not(:disabled):not(.disabled):active:focus,
+.btn-outline-info:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-info.dropdown-toggle:focus {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.btn-outline-warning {
+	color: #ffbc34;
+	border-color: #ffbc34;
+}
+
+.btn-outline-warning:hover {
+	color: #212529;
+	background-color: #ffbc34;
+	border-color: #ffbc34;
+}
+
+.btn-outline-warning:focus,
+.btn-outline-warning.focus {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.btn-outline-warning.disabled,
+.btn-outline-warning:disabled {
+	background-color: transparent;
+	color: #ffbc34;
+}
+
+.btn-outline-warning:not(:disabled):not(.disabled):active,
+.btn-outline-warning:not(:disabled):not(.disabled).active,
+.show>.btn-outline-warning.dropdown-toggle {
+	color: #212529;
+	background-color: #ffbc34;
+	border-color: #ffbc34;
+}
+
+.btn-outline-warning:not(:disabled):not(.disabled):active:focus,
+.btn-outline-warning:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-warning.dropdown-toggle:focus {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.btn-outline-danger {
+	color: #ff0100;
+	border-color: #ff0100;
+}
+
+.btn-outline-danger:hover {
+	color: #fff;
+	background-color: #ff0100;
+	border-color: #ff0100;
+}
+
+.btn-outline-danger:focus,
+.btn-outline-danger.focus {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.btn-outline-danger.disabled,
+.btn-outline-danger:disabled {
+	background-color: transparent;
+	color: #ff0100;
+}
+
+.btn-outline-danger:not(:disabled):not(.disabled):active,
+.btn-outline-danger:not(:disabled):not(.disabled).active,
+.show>.btn-outline-danger.dropdown-toggle {
+	background-color: #ff0100;
+	border-color: #ff0100;
+}
+
+.btn-outline-danger:not(:disabled):not(.disabled):active:focus,
+.btn-outline-danger:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-danger.dropdown-toggle:focus {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.btn-outline-light {
+	color: #ababab;
+	border-color: #e6e6e6;
+}
+
+.btn-outline-light.disabled,
+.btn-outline-light:disabled {
+	color: #ababab;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+	background-color: #62AAD0;
+	border-color: #62AAD0;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+	color: #62AAD0;
+}
+
+.page-link:hover {
+	color: #62AAD0;
+}
+
+.page-link:focus {
+	-webkit-box-shadow: unset;
+	        box-shadow: unset;
+}
+
+.page-item.active .page-link {
+	background-color: #62AAD0;
+	border-color: #62AAD0;
+}
+
+.dropdown-menu {
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	-webkit-box-shadow: inherit;
+	        box-shadow: inherit;
+	font-size: 14px;
+	-webkit-transform-origin: left top 0;
+	    -ms-transform-origin: left top 0;
+	        transform-origin: left top 0;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+	background-color: #62AAD0;
+}
+
+.navbar-nav .open .dropdown-menu {
+	border: 0;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+}
+
+.card {
+	-webkit-box-shadow: 0px 3px 6px #00000029;
+	        box-shadow: 0px 3px 6px #00000029;
+	margin-bottom: 1.875rem;
+	border: 0;
+}
+
+.card-body {
+	padding: 1.5rem;
+}
+
+.card-title {
+	margin-bottom: 15px;
+}
+
+.card-header {
+	border-bottom: 1px solid #f0f0f0;
+	padding: 1rem 1.5rem;
+}
+
+.card-footer {
+	background-color: transparent;
+	;
+	border-top: 1px solid #f0f0f0;
+	padding: 1rem 1.5rem;
+}
+
+.partner-footer {
+	background-color: #fff;
+	border-top: 1px solid #f0f0f0;
+	padding: 1rem 1.5rem;
+	border-radius: 30px !important;
+}
+
+.card .card-header {
+	background-color: #fff;
+	border-bottom: 1px solid #f0f0f0;
+	border-radius: 30px;
+}
+
+.card .card-header .card-title {
+	margin-bottom: 0;
+}
+
+.btn-light {
+	border-color: #e6e6e6;
+	color: #a6a6a6;
+}
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+	background-color: #62AAD0;
+	text-shadow: unset;
+}
+
+.bootstrap-datetimepicker-widget table td.today::before {
+	border-bottom-color: #62AAD0;
+}
+
+.bg-info-light {
+	background-color: rgba(2, 182, 179, 0.12) !important;
+	color: #1db9aa !important;
+}
+
+.bg-primary-light {
+	background-color: rgba(17, 148, 247, 0.12) !important;
+	color: #2196f3 !important;
+}
+
+.bg-danger-light {
+	background-color: rgba(242, 17, 54, 0.12) !important;
+	color: #e63c3c !important;
+}
+
+.bg-warning-light {
+	background-color: rgba(255, 152, 0, 0.12) !important;
+	color: #f39c12 !important;
+}
+
+.bg-success-light {
+	background-color: rgba(15, 183, 107, 0.12) !important;
+	color: #26af48 !important;
+}
+
+.bg-purple-light {
+	background-color: rgba(197, 128, 255, 0.12) !important;
+	color: #c580ff !important;
+}
+
+.bg-default-light {
+	background-color: rgba(40, 52, 71, 0.12) !important;
+	color: #283447 !important;
+}
+
+.text-xs {
+	font-size: 0.75rem !important;
+}
+
+.text-sm {
+	font-size: 0.875rem !important;
+}
+
+.text-lg {
+	font-size: 1.25rem !important;
+}
+
+.text-xl {
+	font-size: 1.5rem !important;
+}
+
+.form-control:focus {
+	border-color: #bbb;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	outline: 0 none;
+	background-color: #bbb;
+}
+
+.form-group {
+	margin-bottom: 40px;
+}
+
+.text-blue {
+	color: #102A4C !important;
+}
+
+/*-----------------
+	4. Avatar
+-----------------------*/
+
+.avatar {
+	position: relative;
+	display: inline-block;
+	width: 3rem;
+	height: 3rem;
+}
+
+.avatar>img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.avatar-title {
+	width: 100%;
+	height: 100%;
+	background-color: #62AAD0;
+	color: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	        justify-content: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+}
+
+.avatar-away::before,
+.avatar-offline::before,
+.avatar-online::before {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 25%;
+	height: 25%;
+	border-radius: 50%;
+	content: "";
+	border: 2px solid #fff;
+}
+
+.avatar-online::before {
+	background-color: #00e65b;
+}
+
+.avatar-offline::before {
+	background-color: #ff0100;
+}
+
+.avatar-away::before {
+	background-color: #ffbc34;
+}
+
+.avatar .border {
+	border-width: 3px !important;
+}
+
+.avatar .rounded {
+	border-radius: 6px !important;
+}
+
+.avatar .avatar-title {
+	font-size: 18px;
+}
+
+.avatar-xs {
+	width: 1.65rem;
+	height: 1.65rem;
+}
+
+.avatar-xs .border {
+	border-width: 2px !important;
+}
+
+.avatar-xs .rounded {
+	border-radius: 4px !important;
+}
+
+.avatar-xs .avatar-title {
+	font-size: 12px;
+}
+
+.avatar-xs.avatar-away::before,
+.avatar-xs.avatar-offline::before,
+.avatar-xs.avatar-online::before {
+	border-width: 1px;
+}
+
+.avatar-sm {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.avatar-sm .border {
+	border-width: 3px !important;
+}
+
+.avatar-sm .rounded {
+	border-radius: 4px !important;
+}
+
+.avatar-sm .avatar-title {
+	font-size: 15px;
+}
+
+.avatar-sm.avatar-away::before,
+.avatar-sm.avatar-offline::before,
+.avatar-sm.avatar-online::before {
+	border-width: 2px;
+}
+
+.avatar-lg {
+	width: 3.75rem;
+	height: 3.75rem;
+}
+
+.avatar-lg .border {
+	border-width: 3px !important;
+}
+
+.avatar-lg .rounded {
+	border-radius: 8px !important;
+}
+
+.avatar-lg .avatar-title {
+	font-size: 24px;
+}
+
+.avatar-lg.avatar-away::before,
+.avatar-lg.avatar-offline::before,
+.avatar-lg.avatar-online::before {
+	border-width: 3px;
+}
+
+.avatar-xl {
+	width: 5rem;
+	height: 5rem;
+}
+
+.avatar-xl .border {
+	border-width: 4px !important;
+}
+
+.avatar-xl .rounded {
+	border-radius: 8px !important;
+}
+
+.avatar-xl .avatar-title {
+	font-size: 28px;
+}
+
+.avatar-xl.avatar-away::before,
+.avatar-xl.avatar-offline::before,
+.avatar-xl.avatar-online::before {
+	border-width: 4px;
+}
+
+.avatar-xxl {
+	width: 5.125rem;
+	height: 5.125rem;
+}
+
+.avatar-xxl .border {
+	border-width: 6px !important;
+}
+
+.avatar-xxl .rounded {
+	border-radius: 8px !important;
+}
+
+.avatar-xxl .avatar-title {
+	font-size: 30px;
+}
+
+.avatar-xxl.avatar-away::before,
+.avatar-xxl.avatar-offline::before,
+.avatar-xxl.avatar-online::before {
+	border-width: 4px;
+}
+
+.avatar-group {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+
+.avatar-group .avatar+.avatar {
+	margin-left: -0.75rem;
+}
+
+.avatar-group .avatar-xs+.avatar-xs {
+	margin-left: -0.40625rem;
+}
+
+.avatar-group .avatar-sm+.avatar-sm {
+	margin-left: -0.625rem;
+}
+
+.avatar-group .avatar-lg+.avatar-lg {
+	margin-left: -1rem;
+}
+
+.avatar-group .avatar-xl+.avatar-xl {
+	margin-left: -1.28125rem;
+}
+
+.avatar-group .avatar:hover {
+	z-index: 1;
+}
+
+/*-----------------
+	5. Select2
+-----------------------*/
+
+.select2-results__option {
+	padding: 6px 15px;
+}
+
+.select2-container .select2-selection--single {
+	border: 1px solid #dcdcdc;
+	height: 46px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 44px;
+	right: 7px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+	border-color: #dcdcdc transparent transparent;
+	border-style: solid;
+	border-width: 6px 6px 0;
+	height: 0;
+	left: 50%;
+	margin-left: -10px;
+	margin-top: -2px;
+	position: absolute;
+	top: 50%;
+	width: 0;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+	border-color: transparent transparent #dcdcdc;
+	border-width: 0 6px 6px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+	padding-right: 30px;
+	padding-left: 15px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: #102A4C;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 44px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+	background-color: #62AAD0;
+}
+
+.select2-container--default .select2-selection--multiple {
+	border: 1px solid #dcdcdc;
+	min-height: 46px;
+}
+
+.select2-dropdown {
+	border-color: #dcdcdc;
+}
+
+/*-----------------
+	6. Nav Tabs
+-----------------------*/
+
+.nav-tabs {
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.card-header-tabs {
+	border-bottom: 0;
+}
+
+.nav-tabs>li>a {
+	margin-right: 0;
+	color: #888;
+	border-radius: 0;
+}
+
+.nav-tabs>li>a:hover,
+.nav-tabs>li>a:focus {
+	border-color: transparent;
+	color: #102A4C;
+}
+
+.nav-tabs.nav-tabs-solid>li>a {
+	color: #102A4C;
+}
+
+.nav-tabs.nav-tabs-solid>.active>a,
+.nav-tabs.nav-tabs-solid>.active>a:hover,
+.nav-tabs.nav-tabs-solid>.active>a:focus {
+	background-color: #62AAD0;
+	border-color: #62AAD0;
+	color: #fff;
+}
+
+.tab-content {
+	padding-top: 20px;
+}
+
+.nav-tabs .nav-link {
+	border-radius: 0;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+	background-color: #eee;
+	border-color: transparent;
+	color: #102A4C;
+}
+
+.nav-tabs.nav-justified>li>a {
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+.nav-tabs.nav-justified>li>a:hover,
+.nav-tabs.nav-justified>li>a:focus {
+	border-bottom-color: #ddd;
+}
+
+.nav-tabs.nav-justified.nav-tabs-solid>li>a {
+	border-color: transparent;
+}
+
+.nav-tabs.nav-tabs-solid>li>a {
+	color: #102A4C;
+}
+
+.nav-tabs.nav-tabs-solid>li>a.active,
+.nav-tabs.nav-tabs-solid>li>a.active:hover,
+.nav-tabs.nav-tabs-solid>li>a.active:focus {
+	background-color: #62AAD0;
+	border-color: #62AAD0;
+	color: #fff;
+}
+
+.nav-tabs.nav-tabs-solid.nav-tabs-rounded {
+	border-radius: 50px;
+}
+
+.nav-tabs.nav-tabs-solid.nav-tabs-rounded>li>a {
+	border-radius: 50px;
+}
+
+.nav-tabs.nav-tabs-solid.nav-tabs-rounded>li>a.active,
+.nav-tabs.nav-tabs-solid.nav-tabs-rounded>li>a.active:hover,
+.nav-tabs.nav-tabs-solid.nav-tabs-rounded>li>a.active:focus {
+	border-radius: 5px;
+}
+
+.nav-tabs-justified>li>a {
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+.nav-tabs-justified>li>a:hover,
+.nav-tabs-justified>li>a:focus {
+	border-bottom-color: #ddd;
+}
+
+.nav-tabs-justified.nav-tabs-solid>li>a {
+	border-color: transparent;
+}
+
+.nav-tabs.nav-justified.nav-tabs-top {
+	border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs.nav-justified.nav-tabs-top>li>a,
+.nav-tabs.nav-justified.nav-tabs-top>li>a:hover,
+.nav-tabs.nav-justified.nav-tabs-top>li>a:focus {
+	border-width: 2px 0 0 0;
+}
+
+.nav-tabs.nav-tabs-top>li {
+	margin-bottom: 0;
+}
+
+.nav-tabs.nav-tabs-top>li>a,
+.nav-tabs.nav-tabs-top>li>a:hover,
+.nav-tabs.nav-tabs-top>li>a:focus {
+	border-width: 2px 0 0 0;
+}
+
+.nav-tabs.nav-tabs-top>li.open>a,
+.nav-tabs.nav-tabs-top>li>a:hover,
+.nav-tabs.nav-tabs-top>li>a:focus {
+	border-top-color: #ddd;
+}
+
+.nav-tabs.nav-tabs-top>li+li>a {
+	margin-left: 1px;
+}
+
+.nav-tabs.nav-tabs-top>li>a.active,
+.nav-tabs.nav-tabs-top>li>a.active:hover,
+.nav-tabs.nav-tabs-top>li>a.active:focus {
+	border-top-color: #62AAD0;
+}
+
+.nav-tabs.nav-tabs-bottom>li>a.active,
+.nav-tabs.nav-tabs-bottom>li>a.active:hover,
+.nav-tabs.nav-tabs-bottom>li>a.active:focus {
+	border-bottom-width: 2px;
+	border-color: transparent;
+	border-bottom-color: #62AAD0;
+	background-color: transparent;
+	transition: none 0s ease 0s;
+	-moz-transition: none 0s ease 0s;
+	-o-transition: none 0s ease 0s;
+	-ms-transition: none 0s ease 0s;
+	-webkit-transition: none 0s ease 0s;
+}
+
+.nav-tabs.nav-tabs-solid {
+	background-color: #fafafa;
+	border: 0;
+}
+
+.nav-tabs.nav-tabs-solid>li {
+	margin-bottom: 0;
+}
+
+.nav-tabs.nav-tabs-solid>li>a {
+	border-color: transparent;
+}
+
+.nav-tabs.nav-tabs-solid>li>a:hover,
+.nav-tabs.nav-tabs-solid>li>a:focus {
+	background-color: #f5f5f5;
+}
+
+.nav-tabs.nav-tabs-solid>.open:not(.active)>a {
+	background-color: #f5f5f5;
+	border-color: transparent;
+}
+
+.nav-tabs-justified.nav-tabs-top {
+	border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs-justified.nav-tabs-top>li>a,
+.nav-tabs-justified.nav-tabs-top>li>a:hover,
+.nav-tabs-justified.nav-tabs-top>li>a:focus {
+	border-width: 2px 0 0 0;
+}
+
+/*-----------------
+	7. Components
+-----------------------*/
+
+.comp-header {
+	margin-bottom: 1.875rem;
+}
+
+.comp-header .comp-title {
+	color: #102A4C;
+}
+
+.line {
+	background-color: #62AAD0;
+	height: 2px;
+	margin: 0;
+	width: 60px;
+}
+
+.comp-buttons .btn {
+	margin-bottom: 5px;
+}
+
+.pagination-box .pagination {
+	margin-top: 0;
+}
+
+.comp-dropdowns .btn-group {
+	margin-bottom: 5px;
+}
+
+.progress-example .progress {
+	margin-bottom: 1.5rem;
+}
+
+.progress-xs {
+	height: 4px;
+}
+
+.progress-sm {
+	height: 15px;
+}
+
+.progress.progress-sm {
+	height: 6px;
+}
+
+.progress.progress-md {
+	height: 8px;
+}
+
+.progress.progress-lg {
+	height: 18px;
+}
+
+/*-----------------
+	8. Focus Label
+-----------------------*/
+
+.form-focus {
+	height: 50px;
+	position: relative;
+}
+
+.form-focus .focus-label {
+	font-size: 14px;
+	font-weight: 500;
+	pointer-events: none;
+	position: absolute;
+	-webkit-transform: translate3d(0, 22px, 0) scale(1);
+	-ms-transform: translate3d(0, 22px, 0) scale(1);
+	transform: translate3d(0, 22px, 0) scale(1);
+	-webkit-transform-origin: left top;
+	    -ms-transform-origin: left top;
+	        transform-origin: left top;
+	-webkit-transition: 240ms;
+	-o-transition: 240ms;
+	transition: 240ms;
+	left: 12px;
+	top: -8px;
+	z-index: 1;
+	color: #b8b8b8;
+	margin-bottom: 0;
+}
+
+.form-focus.focused .focus-label {
+	opacity: 1;
+	top: -18px;
+	font-size: 12px;
+	z-index: 1;
+}
+
+.form-focus .form-control:focus~.focus-label,
+.form-focus .form-control:-webkit-autofill~.focus-label {
+	opacity: 1;
+	font-weight: 500;
+	top: -18px;
+	font-size: 12px;
+	z-index: 1;
+}
+
+.form-focus .form-control {
+	height: 50px;
+	padding: 21px 12px 6px;
+}
+
+.form-focus .form-control::-webkit-input-placeholder {
+	color: transparent;
+	-webkit-transition: 240ms;
+	transition: 240ms;
+}
+
+.form-focus .form-control:focus::-webkit-input-placeholder {
+	-webkit-transition: none;
+	transition: none;
+}
+
+.form-focus.focused .form-control::-webkit-input-placeholder {
+	color: #bbb;
+}
+
+.form-focus.select-focus .focus-label {
+	opacity: 1;
+	font-weight: 300;
+	top: -20px;
+	font-size: 12px;
+	z-index: 1;
+}
+
+.form-focus .select2-container .select2-selection--single {
+	border: 1px solid #e3e3e3;
+	height: 50px;
+}
+
+.form-focus .select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 48px;
+	right: 7px;
+}
+
+.form-focus .select2-container--default .select2-selection--single .select2-selection__arrow b {
+	border-color: #ccc transparent transparent;
+	border-style: solid;
+	border-width: 6px 6px 0;
+	height: 0;
+	left: 50%;
+	margin-left: -10px;
+	margin-top: -2px;
+	position: absolute;
+	top: 50%;
+	width: 0;
+}
+
+.form-focus .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+	border-color: transparent transparent #ccc;
+	border-width: 0 6px 6px;
+}
+
+.form-focus .select2-container .select2-selection--single .select2-selection__rendered {
+	padding-right: 30px;
+	padding-left: 12px;
+	padding-top: 10px;
+}
+
+.form-focus .select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: #676767;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 38px;
+}
+
+.form-focus .select2-container--default .select2-results__option--highlighted[aria-selected] {
+	background-color: #fc6075;
+}
+
+/*-----------------
+	9. Login
+-----------------------*/
+
+.account-page {
+	background-color: #fff;
+}
+
+.account-page .content {
+	padding: 50px 0;
+}
+
+.login-right {
+	background-color: #fff;
+	border: 1px solid #f0f0f0;
+	border-radius: 4px;
+	padding: 25px;
+}
+
+.login-header {
+	margin-bottom: 20px;
+}
+
+.login-header p {
+	margin-bottom: 0;
+}
+
+.login-header h3 {
+	font-size: 18px;
+	margin-bottom: 3px;
+}
+
+.login-header h3 a {
+	color: #62AAD0;
+	float: right;
+	font-size: 15px;
+	margin-top: 2px;
+}
+
+.login-right .dont-have {
+	color: #3d3d3d;
+	margin-top: 20px;
+	font-size: 13px;
+}
+
+.login-right .dont-have a {
+	color: #09dca4;
+}
+
+.login-btn {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.login-or {
+	color: #d4d4d4;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	position: relative;
+}
+
+.or-line {
+	background-color: #e5e5e5;
+	height: 1px;
+	margin-bottom: 0;
+	margin-top: 0;
+	display: block;
+}
+
+.span-or {
+	background-color: #fff;
+	display: block;
+	left: 50%;
+	margin-left: -20px;
+	position: absolute;
+	text-align: center;
+	top: -3px;
+	width: 42px;
+}
+
+.forgot-link {
+	color: #3d3d3d;
+	display: inline-block;
+	font-size: 13px;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.btn-facebook {
+	background-color: #3a559f;
+	color: #fff;
+	font-size: 13px;
+	padding: 8px 12px;
+}
+
+.btn-google {
+	background-color: #dd4b39;
+	color: #fff;
+	font-size: 13px;
+	padding: 8px 12px;
+}
+
+.social-login .btn:hover,
+.social-login .btn:focus {
+	color: #fff;
+}
+
+
+.platinum-partner-logo {
+	width: 60%;
+}
+/*-----------------
+	12. Footer
+-----------------------*/
+
+.footer {
+	position: relative;
+	background: #ffffff;
+	z-index: 1;
+	margin-top: 70px;
+}
+
+.footer-top {
+	padding-top: 50px;
+	position: relative;
+	z-index: 9;
+}
+
+.footer-bottom .copyright {
+	padding: 30px 0;
+}
+
+.footer-bottom .copyright-text p {
+	color: #102A4C;
+}
+
+.footer-bottom .copyright-text p a {
+	color: #09e5ab;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+
+.footer-bottom .copyright-text p a:hover {
+	color: #fff;
+}
+
+.copyright-text ul {
+	width: 20%;
+	float: right;
+}
+
+.footer {
+	background-color: #102A4C;
+  }
+
+  .footer .footer-top {
+	padding: 70px 20px;
+  }
+  @media (max-width: 991.98px) {
+	/* .footer .footer-top {
+	  padding-bottom: 10px;
+	} */
+  }
+  .footer .footer-top .footer-title {
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 6px;
+	text-transform: capitalize;
+  }
+  .footer .footer-top .footer-title a:hover {
+	color: #ffffff;
+  }
+
+  @media (max-width: 575.98px) {
+	.footer .footer-top .footer-title {
+	  font-size: 18px;
+	}
+  }
+  @media (max-width: 991.98px) {
+	/* .footer .footer-top .footer-widget {
+	  margin-bottom: 30px;
+	} */
+  }
+  .footer .footer-top .footer-widget.footer-menu ul {
+	list-style: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+  }
+  .footer .footer-top .footer-widget.footer-menu ul li {
+	margin-bottom: 0px;
+	position: relative;
+  }
+  .footer .footer-top .footer-widget.footer-menu ul li:last-child {
+	margin-bottom: 0;
+  }
+  .footer .footer-top .footer-widget.footer-menu ul li a {
+	color: #ffffff;
+	font-size: 14px;
+	padding-left: 0px;
+	position: relative;
+	-webkit-transition: all 0.4s ease 0s;
+	-ms-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+  }
+  /* .footer .footer-top .footer-widget.footer-menu ul li a:hover {
+	color: #ffffff;
+	letter-spacing: 0.5px;
+	padding-left: 30px;
+  }
+   */
+  /* .footer .footer-top .footer-widget .footer-logo {
+	margin: 0 0 30px;
+  } */
+  .footer .footer-top .footer-widget .footer-about-content p {
+	color: #ffffff;
+  }
+  .footer .footer-top .footer-widget .footer-about-content p:last-child {
+	margin-bottom: 0;
+  }
+  .footer .footer-top .footer-widget .footer-about-content .social-icon ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+  }
+  .footer .footer-top .footer-widget .footer-about-content .social-icon ul li {
+	margin-right: 15px;
+	
+  }
+  .footer .footer-top .footer-widget .footer-about-content .social-icon ul li a img {
+	width: 50%;
+	
+  }
+  .footer .footer-top .footer-widget .footer-about-content .social-icon ul li:last-child {
+	margin-right: 0;
+  }
+  .footer .footer-top .footer-widget .footer-about-content .social-icon ul li a {
+	color: #ffffff;
+	font-size: 20px;
+	-webkit-transition: all 0.4s ease 0s;
+	-ms-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+  }
+  .footer .footer-top .footer-widget .footer-about-content .social-icon ul li a:hover {
+	color: #09e5ab;
+  }
+  .footer .footer-top .footer-widget .footer-contact-info {
+	color: #ffffff;
+	font-size: 15px;
+  }
+  
+ 
+/*-----------------
+	13. Mobile Menu
+-----------------------*/
+
+.sidebar-overlay {
+	background-color: rgba(16, 42, 76, 0.6);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1040;
+}
+
+.menu-opened .main-menu-wrapper {
+	-webkit-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	        transform: translateX(0);
+}
+
+.main-menu-wrapper {
+	width: 100%;
+	background-color: #62aad0;
+}
+
+.menu-header {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: #62aad0;
+	height: 60px;
+	padding: 0 20px;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: space-between;
+	border-bottom: 1px solid #f0f0f0;
+	display: none;
+}
+
+.menu-logo img {
+	height: 40px;
+}
+
+.menu-close {
+	font-size: 18px;
+}
+
+.bar-icon {
+	display: inline-block;
+	width: 31px;
+}
+
+.bar-icon span {
+	background-color: #62AAD0;
+	display: block;
+	float: left;
+	height: 3px;
+	margin-bottom: 7px;
+	width: 31px;
+	border-radius: 2px;
+}
+
+.bar-icon span:nth-child(2) {
+	width: 16px;
+}
+
+.bar-icon span:nth-child(3) {
+	margin-bottom: 0;
+}
+
+#mobile_btn {
+	display: none;
+	margin-right: 30px;
+}
+
+html.menu-opened body {
+	overflow: hidden;
+}
+
+/*-----------------
+	14. Search
+-----------------------*/
+
+.breadcrumb-bar {
+	background-color: #102A4C;
+	padding: 15px 0;
+}
+
+.breadcrumb-bar a {
+	color: #fff !important;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.breadcrumb-bar a:hover {
+	text-decoration: underline;
+}
+
+.space-booking-video {
+	margin-bottom: 70px;
+}
+
+.custom_radio {
+	color: #555;
+	display: inline-block;
+	position: relative;
+	font-size: 14px;
+	font-size: 0.9375rem;
+	padding-left: 30px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.radio_input .custom_radio+.custom_radio {
+	margin-left: 15px;
+}
+
+.custom_radio input {
+	position: absolute;
+	opacity: 0;
+}
+
+.custom_radio input:checked~.checkmark:after {
+	opacity: 1;
+}
+
+.custom_radio .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+}
+
+.custom_radio .checkmark:after {
+	display: block;
+	content: "";
+	position: absolute;
+	opacity: 0;
+	top: 3px;
+	left: 3px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #ff9b44;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+
+.btn-search .btn {
+	background-color: var(--clr-rose);
+	border: 1px solid var(--clr-rose);
+	color: #fff;
+	height: 46px;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+
+.load-more {
+	margin-bottom: 30px;
+}
+
+.copyright-text ul {
+	width: 20%;
+
+}
+
+/*--------------------
+	slick slider
+	----------------------	*/
+
+.slick-slider {
+	position: relative;
+	display: block;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.slick-list:focus {
+	outline: none;
+}
+
+.slick-list.dragging {
+	cursor: pointer;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+	-webkit-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.banner-section-home>.slick-list {
+	height: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+	display: table;
+	content: "";
+}
+
+.slick-track:after {
+	clear: both;
+}
+
+.slick-loading .slick-track {
+	visibility: hidden;
+}
+
+.our-partner-slider .slick-track,
+.our-partner-slide .slick-track {
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.slick-slide {
+	display: none;
+	float: left;
+	height: auto;
+	min-height: 1px;
+}
+
+[dir="rtl"] .slick-slide {
+	float: right;
+}
+
+.slick-slide.slick-loading img {
+	display: none;
+}
+
+.slick-slide.dragging img {
+	pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+
+}
+
+.slick-loading .slick-slide {
+	visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+	display: block;
+	height: auto;
+	border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+	display: none;
+}
+
+.slick-prev,
+.slick-next {
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 60px;
+	height: 93px;
+	padding: 0;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	border-radius: 100%;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+	background-color: transparent;
+	color: #fff;
+	opacity: 1;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+	color: #fff;
+	opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+	opacity: 0.25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	font-family: "slick";
+	font-size: 20px;
+	line-height: 1;
+	opacity: 1;
+	color: #ffffff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+	left: 0;
+	z-index: 1;
+}
+
+
+[dir="rtl"] .slick-prev {
+	right: -25px;
+	left: auto;
+}
+
+
+.slick-prev:before {
+	content: "";
+	background: url("https://repo.cloudwaveinc.com/img/slider-arrow-left.png");
+	position: absolute;
+	top: 0px;
+	left: -80px;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+}
+
+[dir="rtl"] .slick-prev:before {
+	content: "â†’";
+}
+
+
+.slick-next {
+
+	right: 0px !important;
+}
+
+[dir="rtl"] .slick-next {
+	right: auto;
+	left: -25px;
+}
+
+.slick-next:before {
+	content: "";
+	background: url("https://repo.cloudwaveinc.com/img/slider-arrow-right.png");
+	position: absolute;
+	top: 0px;
+	left: 80px;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+}
+
+[dir="rtl"] .slick-next:before {
+	content: "â†";
+}
+
+.slick-dotted.slick-slider {
+	margin-bottom: 30px;
+}
+
+.slick-dots {
+	position: absolute;
+	bottom: -25px;
+
+	display: block;
+
+	width: 100%;
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+
+	text-align: center;
+}
+
+.slick-dots li {
+	position: relative;
+
+	display: inline-block;
+
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+	padding: 0;
+
+	cursor: pointer;
+}
+
+.slick-dots li button {
+	font-size: 0;
+	line-height: 0;
+
+	display: block;
+
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+
+	cursor: pointer;
+
+	color: transparent;
+	border: 0;
+	outline: none;
+	background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+	outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+	opacity: 1;
+}
+
+.slick-dots li button:before {
+	font-size: 6px;
+	line-height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	content: "";
+	text-align: center;
+	opacity: 0.25;
+	color: #102A4C;
+	border-radius: 50%;
+	background: #62AAD0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li:nth-child(2) button:before {
+	background: #62AAD0;
+}
+
+.slick-dots li:nth-child(3) button:before {
+	background: #62AAD0;
+}
+
+.slick-dots li:nth-child(4) button:before {
+	background: #62AAD0;
+}
+
+.slick-dots li:nth-child(5) button:before {
+	background: #62AAD0;
+}
+
+.slick-dots li:nth-child(6) button:before {
+	background: #62AAD0;
+}
+
+.slick-dots li.slick-active button:before {
+	opacity: 0.75;
+	color: #102A4C;
+}
+
+
+/*-------------------
+	Index page
+-----------------------*/
+
+.banner-section {
+	position: relative;
+	background: url(https://repo.cloudwaveinc.com/img/home-page/banner-imag-cover-1.png);
+	background-position: bottom;
+	background-size: 100% 400px;
+	background-repeat: no-repeat;
+	min-height: 400px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	z-index: 1;
+	height: 400px;
+}
+
+
+.banner-section-1 {
+	position: relative;
+	background: url(https://repo.cloudwaveinc.com/img/home-page/banner-imag-cover-1.png);
+	background-position: bottom;
+	background-size: 100% 400px;
+	background-repeat: no-repeat;
+	min-height: 400px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	z-index: 1;
+	height: 400px;
+}
+
+
+.custom-container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.banner-content {
+	background: #fff;
+	border-radius: 50px;
+	padding: 60px;
+	position: relative;
+}
+
+.banner-text {
+	font-size: 36px;
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+
+.banner-sub-text {
+	color: #fff;
+	font-size: 54px !important;
+	font-weight: 400;
+
+	line-height: 36px;
+}
+
+.banner-sub-text-home {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 400;
+
+	line-height: 36px;
+}
+
+.know-more-btn {
+	font-size: 16px;
+	color: #fff !important;
+	background-color: #102A4C;
+
+	border-radius: 0;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 15px 30px !important;
+}
+
+.cloud-service-section {
+	padding: 50px 0 0 0;
+	position: relative;
+	z-index: 1;
+	background-color: #ffffff;
+}
+
+.explore-our-product-section {
+	padding: 50px 30px 0 30px;
+
+}
+
+.section-header h2 {
+	font-size: 32px;
+	color: #102A4C;
+	font-weight: 600;
+	margin-bottom: 30px;
+	line-height: 46px;
+	text-transform: uppercase;
+}
+
+.section-header h2 span {
+	color: #102A4C;
+}
+
+.cloud-slider .card {
+
+	-webkit-box-shadow: none;
+
+	        box-shadow: none;
+	border-radius: 0px;
+	padding: 0;
+	border: 8px solid #e3e3e3;
+	height: 470px;
+}
+
+
+.cloud-card-content h2 {
+	font-size: 22px;
+	color: #102A4C;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	font-weight: 600;
+}
+
+.mt-7 {
+	margin-top: 75px;
+}
+
+.explore-our-product-slider .card img {
+	height: 300px;
+	width: 300px;
+	margin: auto;
+}
+
+.cloud-slider .card-body {
+	padding: 50px 30px;
+	border-radius: 0px;
+	height: 100%;
+}
+
+.cloud-card-content {
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: start;
+
+}
+
+.cloud-slider p {
+	color: #102A4C;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.cloud-slider .slick-slide,
+.explore-our-product-section .slick-slide {
+
+	margin: 5px;
+}
+
+.section-header p {
+	font-size: 18px;
+	color: #102A4C;
+	margin-bottom: 40px;
+}
+
+
+.cloud-card-content h3 {
+	font-size: 22px;
+	color: #102A4C;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.explore-our-product-slider .card {
+	min-height: 50em;
+	padding: 10px;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	margin-bottom: 1.875rem;
+	border: 8px solid #e3e3e3;
+}
+
+
+.explore-our-product-slider .card p {
+	font-size: 18px;
+	color: #102A4C;
+}
+
+.our-partner-slider .slick-slide img,
+.our-partner-slide .slick-slide img {
+	display: block;
+	width: 220px !important;
+}
+
+.testimonial-slide .card {
+	min-height: 475px;
+	display: -webkit-box !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
+}
+
+.testimonial-slide img {
+	height: 80px;
+}
+
+.cloud-card-content img {
+	margin: auto;
+	width: 200px;
+
+}
+
+.img-fluid-w {
+	max-width: 75%;
+	height: auto;
+	padding-left: 50px;
+}
+
+.aws-home-logo,
+.salesforce-home-logo {
+	width: 160px !important;
+}
+
+.cloudwave-success-story .banner-text {
+	font-size: 30px;
+}
+
+.our-partner-slider .slick-slide img.salesforce-our-partner,
+.our-partner-slide .slick-slide img.salesforce-our-partner,
+.our-partner-slider .slick-slide img.aws-our-partner,
+.our-partner-slide .slick-slide img.aws-our-partner {
+	width: 160px !important;
+}
+
+.our-partner-slider .slick-slide img.our-client-gsa-logo,
+.our-partner-slide .slick-slide img.our-client-gsa-logo,
+.our-partner-slider .slick-slide img.our-client-us-custom-logo,
+.our-partner-slide .slick-slide img.our-client-us-custom-logo {
+	width: 130px !important;
+}
+
+/*-------------------
+	cloudwave-success-stories
+------------------**/
+.cloudwave-success-stories {
+	background-color: #e3e3e3;
+	padding: 50px;
+	margin-top: 60px;
+}
+
+.cis-page {
+	margin-bottom: 0px;
+}
+
+.cloudwave-success-stories .card {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	margin-bottom: 30px;
+	border: 0;
+	background: transparent;
+}
+
+.cloudwave-success-stories .card-img {
+	border-radius: 0;
+}
+
+.cloudwave-success-stories h3 {
+	font-size: 24px;
+	font-weight: 600;
+	color: #102A4C;
+	line-height: 32px;
+}
+
+.cloudwave-success-stories h2 {
+	font-size: 36px;
+	font-weight: 600;
+	color: #102A4C;
+	margin-bottom: 50px;
+}
+
+.cloudwave-success-stories p {
+	font-size: 16px;
+	color: #102A4C;
+}
+
+.learn-more-btn {
+	font-size: 16px;
+	color: #102A4C !important;
+	background-color: transparent;
+	font-weight: 600;
+}
+
+.cloudwave-success-stories .card-body {
+	padding-top: 0;
+}
+
+/* find us on social media section*/
+.box-square-img img {
+	width: 65%;
+
+}
+
+.find-us-on-social-media {
+	text-align: center;
+	padding: 50px 0 0 0;
+}
+
+.find-us-on-social-media h2 {
+	text-align: center;
+	color: #00104a;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.social-img-sec {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.social-img-sec img {
+	width: 70px;
+	margin: 10px;
+}
+.smartsheet-capability-banner .social-img-sec img {
+	margin: 5px;
+}
+.social-img-white.social-img-sec img {
+	width: 50px;
+    margin: 5px;
+}
+/*testimonial box*/
+.box2 {
+	border-color: #62AAD0 !important;
+	margin-bottom: 200px;
+}
+
+.box1 {
+	border-color: #102A4C !important;
+}
+
+.box2,
+.box2 .card-footer {
+	background-color: #62AAD0 !important;
+	color: #fff;
+}
+
+.box1,
+.box1 .card-footer {
+	background-color: #102A4C;
+	color: #fff;
+}
+
+.dialog-box-design {
+	margin-right: 10px;
+	margin-left: 10px;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.dialog-box-design p {
+	color: #fff;
+	font-weight: 400;
+	font-size: 17px;
+	text-align: center;
+	line-height: 32px;
+}
+
+.dialog-box-design h3 {
+	color: #fff;
+}
+
+.box2.dialog-box-design::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 80px solid #62AAD0;
+	border-right: 80px solid transparent;
+	border-top: 80px solid #62AAD0;
+	border-bottom: 80px solid transparent;
+	left: 40px;
+	bottom: -100px;
+	z-index: -1;
+}
+
+.box1.dialog-box-design::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 80px solid #102A4C;
+	border-right: 80px solid transparent;
+	border-top: 80px solid #102A4C;
+	border-bottom: 80px solid transparent;
+	left: 40px;
+	bottom: -100px;
+	z-index: -1;
+}
+
+/*-------------------
+	smartsheet
+------------------**/
+
+.smartsheet-banner .banner-sub-text {
+	color: #62AAD0;
+}
+
+.process-section .card-body h3 {
+	font-size: 32px;
+	color: #102A4C;
+	font-weight: 600;
+	margin-bottom: 10px;
+	line-height: 36px;
+	/* text-transform: capitalize; */
+}
+
+.process-section .card-body h2 {
+	font-size: 50px;
+	color: #102A4C;
+	font-weight: 600;
+	margin-bottom: 25px;
+	line-height: 54px;
+	text-transform: capitalize;
+}
+
+.sandbox-download-text {
+	text-transform: none !important;
+}
+
+.process-section .card-body h4 {
+	font-size: 24px;
+	margin-top: 5px;
+	font-weight: 500;
+}
+
+.sandbox-download-text {
+	font-size: 36px !important;
+}
+
+.process-section .card-body .blogssubheading>h3 {
+	font-size: 20px;
+	color: #102A4C;
+	font-weight: 500;
+	margin-bottom: 15px;
+	line-height: 30px;
+}
+
+.card-img-top.salesforce-our-partner {
+	width: 80%;
+}
+
+.xcavate-li {
+	font-size: 24px;
+	color: #102A4C;
+	list-style-type: none;
+}
+
+.you-tube-size {
+	width: 65%;
+	height: 90%;
+}
+
+.m-top-50px {
+	margin-top: 50px;
+}
+
+.process-section .card-body p {
+	color: #102A4C;
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 400;
+}
+
+.process-section {
+	padding-top: 50px;
+}
+
+.smartsheet-intergration {
+	padding: 90px 0;
+	background: #f0f2ff;
+	margin-bottom: 45px;
+}
+
+.smartsheet-intergration .media-body h5 {
+	font-size: 30px;
+}
+
+.smartsheet-intergration .media {
+	margin-bottom: 50px;
+}
+
+.no-code-ui-section {
+	background: #fff;
+	padding: 25px 0;
+}
+
+.no-code-ui-section h2 {
+	font-size: 36px;
+	color: #62AAD0;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+.no-code-ui-section p {
+	font-size: 28px;
+	color: #102A4C;
+	margin-bottom: 40px;
+}
+
+.smartsheet-intergration .section-header h2 {
+	margin-bottom: 50px;
+}
+/*--------------------------------
+	CW AI
+---------------------------------*/
+.cw-ai-banner {
+	background: url(https://repo.cloudwaveinc.com/img/cw-ai-cover.png) !important;
+	background-repeat: no-repeat;
+	background-size: 100% 400px;
+	background-size: cover !important;
+	background-position: center;
+	/* padding-top: 20px; */
+}
+
+.ai-vid{
+	padding-top: 60px;
+}
+
+/*---------------------------------
+	Cloud Integration
+------------------------------------*/
+.cloud-integration-banner {
+	background: #fff;
+	background-image: url(https://repo.cloudwaveinc.com/img/Cloud-Integration-Page-Cover.png);
+	background-size: 100% 400px;
+	background-repeat: no-repeat;
+	height: 400px !important;
+}
+
+.smartsheet-banner {
+	background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Page/Smartsheet-Page-Cover.png);
+	background-repeat: no-repeat;
+}
+.smartsheet-capability-banner {
+	background: #fff;
+	background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover.png);
+	background-size: auto;
+	background-repeat: no-repeat;
+	height: auto !important;
+}
+.cloud-integration-banner h2 {
+	font-size: 68px;
+	color: #fff !important;
+	font-weight: 900;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.cloud-integration-banner h4 {
+	font-size: 64px;
+	color: #FFFFFF;
+	font-weight: 900;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+
+.banner-section {
+	padding: 70px 0 0;
+}
+.smartsheet-capability-banner {
+	padding: 70px 0 70px;
+}
+.banner-section-1 {
+	padding: 90px 0;
+}
+
+.banner-sub-sub-text {
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+.cloud-text-section {
+	padding-top: 60px;
+}
+
+.cloud-text-section p {
+	font-size: 34px;
+	font-weight: 400;
+	color: #102A4C;
+	line-height: 40px;
+}
+
+.integration-section .card-body p {
+	color: #102A4C;
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 400;
+}
+
+.integration-section .card-body p a {
+	/* text-decoration: underline; */
+	color: #62AAD0;
+	;
+}
+.integration-section .card-body h3.card-title a {
+    /* text-decoration: underline; */
+    color: #62AAD0;
+}
+.integration-section .card-body h4.card-title a {
+    /* text-decoration: underline; */
+    color: #62AAD0;
+}
+.process-section .card-body {
+	padding: 70px 30px 0 30px;
+}
+
+.why-mulisoft-ul {
+	background-color: #102A4C;
+	padding: 50px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.why-mulisoft-ul .card-body {
+	padding-top: 0;
+
+}
+
+.why-mulisoft-ul .card-body p,
+.why-mulisoft-ul .blog-ol-list,
+.why-mulisoft-ul .card-body h3,
+.why-mulisoft-ul .card-body h4 {
+	color: #fff;
+}
+
+.why-cw .blog-ol-list {
+	list-style-position: inside;
+	font-size: 20px;
+	color: #102A4C;
+	font-weight: 400;
+}
+
+.why-cw a,
+.why-cw a:hover {
+	color: #62AAD0;
+}
+
+.space-text-font {
+	margin-bottom: 30px !important;
+}
+
+.sales-card .card-body {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+
+.smartsheet-inter img {
+	width: 30px;
+}
+.drive-your-busin-sec p {
+	margin-bottom: 20px;
+}
+.smartsheet-inter p {
+	font-weight: 600 !important;
+}
+
+/*-----------------------
+	Careers
+-------------------*/
+.careers-section {
+	background: url(https://repo.cloudwaveinc.com/img/Careers-Page/Careers-Page-Cover.png);
+	background-color: #ccc;
+	background-repeat: no-repeat;
+	background-size: 100% 500px;
+	/* background-position: center; */
+}
+.our-core-value-sec-careers .card-text:last-child {
+	margin-bottom: 0 !important;
+}
+
+.careers-text-section .card .card-title {
+	/* font-size: 30px; */
+	color: #102A4C;
+	font-weight: 600;
+}
+
+.careers-text-section .card p {
+	font-size: 22px;
+	color: #102A4C;
+	font-weight: 500;
+}
+
+.job-search .form-control {
+	height: 60px;
+	border-radius: 45px;
+	font-weight: 300;
+	font-size: 28px;
+}
+
+/*-------------------------
+	Mulisoft
+-----------------------------*/
+.mulisoft-content h3 {
+	font-size: 26px;
+	color: #102A4C;
+	margin-bottom: 30px;
+	line-height: 36px;
+}
+
+.mulisoft-content p {
+	font-size: 20px;
+	color: #102A4C;
+	line-height: 30px;
+	text-align: justify;
+}
+
+.mulisoft-card {
+	border-radius: 30px;
+}
+
+.mulisoft-section {
+	background: url(https://repo.cloudwaveinc.com/img/MuleSoft-Page-Cover.png);
+	background-color: #ccc;
+	background-repeat: no-repeat;
+	background-size: 100% 500px;
+	background-position: center;
+
+
+}
+
+.mulisoft-icon-img {
+	width: 18% !important;
+}
+
+@media (max-width: 991.98px) {
+	.banner-section {
+		/* height: auto !important; */
+		background-color: #102a4c !important;
+		/* padding: 0 !important; */
+		background-image: url(https://repo.cloudwaveinc.com/img/banner-imag-cover-tab.png);
+	}
+
+	.display-none-img {
+		display: block !important;
+		padding: 0 !important;
+	}
+
+	.banner-text-main {
+		margin-top: 25px;
+		margin-bottom: 5px;
+		/* padding-left: 75px; */
+	}
+
+	.our-partner-slider .slick-slide img.our-client-gsa-logo,
+	.our-partner-slide .slick-slide img.our-client-gsa-logo,
+	.our-partner-slider .slick-slide img.our-client-us-custom-logo,
+	.our-partner-slide .slick-slide img.our-client-us-custom-logo {
+		width: 90px !important;
+	}
+
+	.inner-blog {
+		margin-top: 30px !important;
+		font-size: 30px;
+	}
+
+	.blog-ol-list {
+		font-size: 16px !important;
+	}
+}
+
+/*------------------------
+	Salesforce
+----------------------------*/
+.salesforce-banner .banner-inner-text {
+	margin-bottom: 30px;
+	color: #102A4C;
+	font-size: 14px;
+	line-height: 23px;
+}
+
+.section-header .inner-text {
+	font-size: 26px;
+	line-height: 35px;
+	color: #102A4C;
+}
+
+.sales-text-section .media-body p {
+	color: #102A4C;
+	font-size: 22px;
+}
+
+.sales-text-section .media h3 {
+	color: #102A4C;
+}
+
+.sales-text-section .card {
+	border-radius: 30px;
+}
+
+.sales-text-section {
+	padding: 25px 0;
+}
+
+.sales-text-section .know-more-btn {
+	margin-top: 50px;
+}
+
+.cloud-card-content p {
+	color: #102A4C;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.inner-blog {
+	margin-bottom: 50px;
+	font-weight: 600;
+}
+
+/*-----------------
+	Azure
+-----------------------*/
+
+.benifits-section h3 {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.benifits-section p {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 35px;
+	text-align: left;
+}
+
+.benifits-section {
+	padding: 0px 0;
+}
+
+.sandbox-card {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	border-radius: 0px;
+	padding: 0;
+	border: 8px solid #e3e3e3;
+}
+
+.sandbox-card img {
+	padding: 50px;
+}
+
+.sandbox-card .card-body {
+	padding-top: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.sandbox-card .mulisoft-content {
+	-ms-flex-item-align: start;
+	    align-self: flex-start;
+}
+
+.text-light-blue {
+
+	color: #102a4c;
+}
+
+.text-light-blue1 {
+	color: #62AAD0;
+	text-decoration: underline;
+}
+
+/*-----------------
+	contact us
+-----------------------*/
+.contact-us input {
+	height: 79px;
+	border: 1px solid #d3d2ce;
+	border-radius: 0;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.contact-us .form-group label {
+	font-size: 26px;
+	color: #102A4C;
+}
+
+.contact-us textarea {
+	border: 1px solid #d3d2ce;
+	border-radius: 0;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.error {
+	color: red;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+#success {
+	color: #26af48;
+}
+
+.aws-text {
+	background-color: #102A4C;
+	color: #fff;
+	padding: 70px 0;
+}
+
+.aws-text .card {
+	background-color: transparent;
+}
+
+.benifit-aws .card {
+	min-height: 44em;
+}
+
+.aws-banner {
+	background: url(https://repo.cloudwaveinc.com/img/AWS-Page-Cover.png);
+	background-repeat: no-repeat;
+	background-size: 100% 400px;
+	background-position: center;
+	/* padding-top: 20px; */
+}
+
+.google-cloud-platform-section {
+	background: url(https://repo.cloudwaveinc.com/img/Google-Cloud-Platform/Google-Cloud-Platform-Page-Cover.png);
+	background-repeat: no-repeat;
+	background-size: 100% 400px;
+	background-position: center;
+
+}
+
+
+.sanbox-section {
+	background: url(https://repo.cloudwaveinc.com/img/Sandbox-Management-Page/Sandbox-Page-Cover.png);
+	background-repeat: no-repeat;
+	background-size: 100% 400px;
+	background-position: center;
+	height: 400px;
+}
+
+.sanbox-section img {
+	width: 40%;
+}
+
+.sandbox-management-app-sec {
+	padding-bottom: 50px;
+}
+
+.sandbox-management-app-sec img {
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px;
+
+}
+
+.sandbox-management-app-sec .card-body {
+	padding: 20px;
+}
+
+.salesforce1 {
+	background: url(https://repo.cloudwaveinc.com/img/Salesforce-Page/Salesforce-Page-Cover.png);
+	background-repeat: no-repeat;
+	background-size: 100% 400px;
+	background-position: center;
+
+}
+
+.partners-section {
+	background: url(https://repo.cloudwaveinc.com/img/Partners-Page-Cover.png);
+	background-repeat: no-repeat;
+	background-size: 100% 400px;
+	background-position: center;
+}
+
+.case-studies-section {
+	background: url(https://repo.cloudwaveinc.com/img/Case-Studies-Page-Cover.png);
+	background-repeat: no-repeat;
+	background-size: 100% 400px;
+	background-position: center;
+	margin-bottom: 50px;
+}
+
+.blog-section {
+	background: url(https://repo.cloudwaveinc.com/img/Blogs-Page-Cover.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 50px;
+}
+
+.about-us-section {
+	background: url(https://repo.cloudwaveinc.com/img/About-Us-Page/About-Us-Page-Cover.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 400px;
+}
+
+.news-events-section {
+	background: url(https://repo.cloudwaveinc.com/img/News_Events-Page/News_Events-Page-Cover.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 400px;
+}
+
+.clients-section {
+	background: url(https://repo.cloudwaveinc.com/img/Clients-Page/Clients-Page-Cover.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 400px;
+}
+
+.contact-us-section {
+	background: url(https://repo.cloudwaveinc.com/img/Conact-Us-Page-Cover.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 400px;
+}
+
+.azure-section {
+	background: url(https://repo.cloudwaveinc.com/img/Azure-Page-Cover.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 400px;
+}
+
+.cursor-text {
+	cursor: pointer;
+}
+
+.navbar>li>i {
+	width: 54px;
+	height: 54px;
+	background: #102A4C;
+	border: 1px solid #102A4C;
+	padding: 8px;
+	border-radius: 50%;
+	font-size: 16px;
+	line-height: 37px;
+	text-align: center;
+	color: #fff;
+}
+
+.sales-sec-img img {
+	width: 100px;
+}
+.cons-sec.process-section .card-body h4 {
+	font-size: 18px;
+}
+.cons-sec .sales-sec-img img {
+	width: 80px;
+}
+.sales-sec-img2 img {
+	height: 50%;
+	width: 50%;
+}
+
+.sales-card .card-body {
+	padding: 20px;
+}
+
+.sales-card .card {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	border-radius: 0px;
+	padding: 0;
+	border: 8px solid #e3e3e3;
+}
+
+.salesforce-consult-partner-sec img {
+	width: 100px;
+}
+.w-image-space {
+	width: 50% !important;
+}
+.cloudwave-salesforce-service-sec .mulisoft-icon-img {
+	width: 10% !important;
+}
+
+.sanbox-solo-sec h3 {
+	font-size: 26px;
+}
+
+.sanbox-solo-sec p {
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+.sanbox-solo-sec a {
+	font-size: 20px;
+}
+
+.system-integrated-by-cloudwave-sec .card {
+	height: 220px;
+}
+
+.system-integrated-by-cloudwave-sec .card img {
+	width: 75%;
+}
+
+.w-15 {
+	width: 15% !important;
+}
+
+.clients-page-logo-sec img {
+	width: 70%;
+	padding: 20px;
+}
+
+.clients-page-logo-sec .noaa-logo img {
+	width: 55%;
+	padding: 20px;
+}
+
+.clients-page-logo-sec .larger-img img {
+	width: 80%;
+	padding: 20px;
+}
+
+.clients-page-logo-sec .real-img-flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+
+}
+
+.f-10 {
+	font-size: 10px !important;
+}
+
+.blog-ol-list ul {
+	padding-left: 25px;
+}
+
+.our-service-about-us-sec ul li {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+label {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.contact-us-sec .know-more-btn {
+	font-size: 20px;
+	font-weight: 600 !important;
+}
+
+.aws-text .card-body.box-square-img {
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.img-div-partner {
+	height: 230px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+/*------------------------
+SpaceBooking
+----------------------*/
+
+.spacebooking-dark-sec .card img {
+	width: 75%;
+}
+.spacebooking-dark-sec .card {
+	background-color: #fff;
+	margin-bottom: 50px;
+	border-radius: 0;
+	padding: 30px;
+	min-height: 31rem;
+}
+.spacebooking-dark-sec .card-header {
+	padding: 0
+}
+.spacebooking-dark-sec .card-body {
+	padding: 0
+}
+.spacebooking-dark-sec .card-body p {
+	font-size: 18px;
+	color: #102A4C;
+    line-height: 24px;
+    font-weight: 400;
+
+}
+.spacebooking-dark-sec .card-body h3 {
+	font-size: 20px;
+	margin-bottom: 0;
+}
+.spacebooking-dark-sec {
+	padding-bottom: 30px;
+}
+.spacebooking-sec {
+	background: url(https://repo.cloudwaveinc.com/img/Space-Booking-Page/Space-Booking-Page-Cover.png);
+	background-color: #ccc;
+	background-repeat: no-repeat;
+	background-size: 100% 500px;
+	/* background-position: center; */
+}
+.space-booking-contact-us-sec .card-title {
+	text-transform: none!important;
+}
+.drive-your-busin-sec .card-body h3 ,.drive-your-busin-sec h2 {
+	text-transform: none;
+}
+.heading-img {
+	width: 20%!important;
+	margin: 5px!important;
+	padding: 0!important
+}
+.sandbox-management-app-sec .card-body h2 {
+	text-transform: none;
+}
+/*---capcha--*/
+.modal {
+	z-index: 1061;
+}
+.margin-btm-sec {
+	margin-bottom: 50px;
+}
+.cloud-card-content> .split-sec {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.result-preview {
+	font-size: 18px;
+}
+.sales-card.system-integrated-by-cloudwave-sec.salsforce-sec-card .real-img-flex {
+	justify-content: center;
+}
+.result-title  {
+	/* color: #62AAD0 !important; */
+	text-decoration: underline;
+}
+.form-valid  {
+	opacity:0.5;
+  }
+  
+  label span {
+	text-decoration: none;
+	font-weight: normal;
+	color: #dc3545!important;
+  }
+/*-----------------
+	Landing Page Banner
+-----------------------*/
+
+.banner-guide {
+	margin-top: 40px;
+	margin-bottom: 50px;
+	padding: 30px 0px;
+	position: relative;
+	background-color: #102A4C;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	z-index: 1;
+	height: auto;
+}
+
+
+.guide-img{
+	width: 75%;
+}
+
+.guide-heading{
+	font-size: 55px !important;
+	font-weight: 600 !important; 
+}
+
+.guide-subheading{
+	font-size: 40px !important;
+}
+
+.guide-content{
+	font-size: 25px !important;
+  	font-weight: 400 !important;
+}
+
+
+.download-form .form-group{
+	margin-bottom: 15px;
+}
+
+.download-form .form-group, lable{
+	color: #fff;
+}
+
+.download-form .form-group .form-control{
+	border-color: #ffffff;
+  	background-color: #ffffff;
+	font-size: 15px;
+	min-height: 40px;
+	padding: 3px 10px;
+	border-radius: 0;
+}
+
+.download-form .form-group input[type="text"], input[type="email"]{
+	color: #102A4C;
+}
+
+
+.download-form .btn-block{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+.block-sale-img img{
+		width: 90px;
+		float: left;
+}
+.block-sale-card{
+	border: 8px solid #e3e3e3;
+	border-radius: 0;
+}
+.block-sale-card .card-body{
+	padding: 20px;
+}
+.block-sale-img{
+	font-size: 22px;
+	font-weight: 500;
+	padding-bottom: 25px;
+}
+
+.block-sale-img .mr-3{
+	margin-right: 0.5rem !important;
+}
+
+.block-sale-card .card-body{
+	padding: 25px 15px 0 25px !important;
+}
+
+.block-sec-card{
+	padding: 0 30px 0 30px;
+}
+
+/* ---------------
+	Xcavate Page CSS
+---------------------*/
+.xcavate-sec {
+	background-image: url(https://repo.cloudwaveinc.com/img/xcavate/XCavate-Page-Cover.png);
+	background-color: #ccc;
+	background-repeat: no-repeat;
+	background-size: 100% 500px;
+	background-position: top; 
+}
+.xhead{
+	color: #f19125 !important;
+}
+.text-icon-content {
+	padding: 10px 0px 10px 30px !important;
+}
+
+.text-icon-content .card-title {
+	font-weight: 600 !important;
+	margin-top: -20px !important;
+}
+
+.icon-text-feature{
+	margin-top: -30px !important;
+}
+
+.xtext-icon{
+	max-width: 90px !important;
+}
+
+.icohead{
+	margin-left: -20px !important;
+	padding-top: 10px !important;
+}
+
+.xcavate-download{
+	text-decoration: underline;
+}
+.xcavate-download span{
+	text-transform: lowercase !important;
+}
+
+.dwnlod-text-xcavate{
+	margin-top: 50px;
+}
+
+.xlogo-sec{
+	max-width: 250px !important;
+	padding: 10px;
+}
+.xlogo{
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.xhead-sec{
+	margin-top: -15px !important;
+}
+
+.xcardhead{
+	font-weight: 600 !important;
+}
+.xfeature-body{
+	padding: 0px 0px 0 30px !important;
+}
+
+.xfeature-body .xcardhead{
+	font-size: 24px !important;
+}
+.xfeature-img{
+	width: 80% !important;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+.xno-margin{
+	margin-bottom: 0 !important;
+}
+/*-----------------
+	Responsive
+-----------------------*/
+
+@media only screen and (min-width: 1680px) {
+	.custom-container {
+		width: 100%;
+		max-width: 1450px;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.avatar-xxl {
+		width: 8rem;
+		height: 8rem;
+	}
+	.avatar-xxl .border {
+		border-width: 4px !important;
+	}
+
+	.avatar-xxl .rounded {
+		border-radius: 12px !important;
+	}
+
+	.avatar-xxl .avatar-title {
+		font-size: 42px;
+	}
+
+	.avatar-xxl.avatar-away:before,
+	.avatar-xxl.avatar-offline:before,
+	.avatar-xxl.avatar-online:before {
+		border-width: 4px;
+	}
+}
+@media (max-width: 1920.98px) and (min-width: 1440.98px) {
+	.cloud-integration-banner,.banner-section-1,.mulisoft-section,.google-cloud-platform-section,.smartsheet-banner,.aws-banner,.azure-section,.spacebooking-sec,
+	.sanbox-section,.partners-section,.case-studies-section,.blog-section,.about-us-section,.news-events-section,.clients-section,.careers-section,.contact-us-section {
+		background-size: 100% 400px;
+		height: 400px;
+	}
+	.space-booking-form-title {
+		font-size: 39px!important;
+	}
+	.sanbox-section img {
+		width: 32%;
+	}
+	.heading-img {
+		width: 12%!important;
+	}
+	.banner-section-1 {
+
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/1.png);
+	}
+	
+	
+
+	.cloud-integration-banner {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/8.png);
+	}
+	.google-cloud-platform-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/4.png);
+	}
+	.salesforce1 {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/2.png);
+	}
+	.smartsheet-banner {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/5.png);
+	}
+	.aws-banner {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/6.png);
+	}
+	.azure-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/7.png);
+	}
+	.spacebooking-sec {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/10.png);
+	}
+	.sanbox-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/9.png);
+	}
+	.partners-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/11.png);
+	}
+	.case-studies-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/12.png);
+	}
+
+	.about-us-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/14.png);
+	}
+	.news-events-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/15.png);
+	}
+	.clients-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/16.png);
+	}
+	.careers-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/17.png);
+	}
+	.blog-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/13.png);
+	}
+	.contact-us-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/18.png);
+	}
+	
+	.mulisoft-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/3.png);
+	}
+}
+@media only screen and (max-width: 1920.98px){
+	.img-div-partner {
+		height: 285px!important;
+	}
+	
+}
+@media only screen and (max-width: 1440.98px) {
+	.card-img-top.salesforce-our-partner {
+		width: 65%;
+	}
+	.img-div-partner {
+		height: 200px!important;
+	}
+	.explore-our-product-slider .card {
+		min-height: 53.5em;
+	}
+}
+@media only screen and (max-width: 1366.98px) {
+
+	.explore-our-product-slider .card {
+		min-height: 50em;
+	}
+
+	.row.row-grid {
+		margin-left: -8px;
+		margin-right: -8px;
+	}
+
+	.row.row-grid>div {
+		padding-right: 8px;
+		padding-left: 8px;
+		-ms-flex: 0 0 33.333333%;
+		-webkit-box-flex: 0;
+		        flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+	}
+
+	.our-partner-slider .slick-slide img.salesforce-our-partner,
+	.our-partner-slide .slick-slide img.salesforce-our-partner,
+	.our-partner-slider .slick-slide img.aws-our-partner,
+	.our-partner-slide .slick-slide img.aws-our-partner {
+		width: 140px !important;
+	}
+
+	.our-partner-slider .slick-slide img,
+	.our-partner-slide .slick-slide img {
+
+		width: 220px !important;
+	}
+
+	.our-partner-slider .slick-slide img.our-client-gsa-logo,
+	.our-partner-slide .slick-slide img.our-client-gsa-logo,
+	.our-partner-slider .slick-slide img.our-client-us-custom-logo,
+	.our-partner-slide .slick-slide img.our-client-us-custom-logo {
+		width: 110px !important;
+	}
+
+	.explore-our-product-slider .card img {
+		height: 200px;
+		width: 200px;
+		margin: auto;
+	}
+
+	.benifit-aws.explore-our-product-slider .card {
+		min-height: 45em;
+	}
+
+	.our-service-about-us-sec ul li {
+		font-size: 20px;
+		font-weight: 400;
+	}
+
+	.process-section .card-body h4 {
+		font-size: 22px;
+	}
+}
+
+.test_height {
+	min-height: 33em !important;
+}
+
+@media only screen and (max-width: 1199.98px) {
+	.space-booking-video {
+		margin-bottom: 50px;
+	}
+	.sandbox-download-text {
+		font-size: 32px !important;
+	}
+
+	.our-partner-slider .slick-slide img,
+	.our-partner-slide .slick-slide img {
+		width: 185px !important;
+	}
+
+	.header-nav {
+		padding-left: 0px;
+		padding-right: 0px;
+		height: 176px;
+	}
+
+	.searchbar {
+		line-height: 60px;
+		margin-left: 25px;
+		margin-top: 14px;
+		width: 34px;
+		height: 34px;
+		background: #102A4C;
+		border: 1px solid #102A4C;
+		padding: 8px;
+		border-radius: 50%;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		color: #fff;
+	}
+
+	.cloud-integration-banner h2 {
+		font-size: 40px;
+	}
+
+	.cloud-integration-banner h4 {
+		font-size: 40px !important;
+	}
+
+	.process-section .card-body h3 {
+		font-size: 30px;
+	}
+
+	.aws-banner {
+		background-size: 100% 350px;
+		height: 350px !important;
+		min-height: 350px;
+	}
+
+	.slider-section-header {
+		text-align: center;
+	}
+
+	.row.row-grid>div {
+		-ms-flex: 0 0 50%;
+		-webkit-box-flex: 0;
+		        flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.main-nav.bg-trans li a {
+		font-size: 20px;
+	}
+
+	.dash-widget {
+		-ms-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+		text-align: center;
+	}
+
+	.header-navbar-rht li.contact-item {
+		display: none;
+	}
+
+	.banner-content {
+		padding: 30px;
+	}
+
+	.banner-btn .btn {
+		min-width: 165px;
+	}
+
+	.blog-widget {
+		margin: 0 0 25px;
+	}
+
+	.top-list-slider .slick-prev,
+	.top-instructors-slider .slick-prev {
+		top: 50%;
+		right: 0;
+		left: 0;
+	}
+
+	.top-list-slider .slick-next,
+	.top-instructors-slider .slick-next {
+		right: 0;
+		top: 50%;
+		left: auto;
+	}
+
+	.top-courses-slider .slick-prev {
+		top: 50%;
+		right: 0;
+		left: 0;
+	}
+
+	.top-courses-slider .slick-next {
+		top: 50%;
+		right: 0;
+	}
+
+	.cloud-service-section {
+		padding: 40px 0;
+	}
+
+	.section-header h2 {
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+
+	.cloud-slider .card {
+		padding: 20px;
+	}
+
+	.cloud-card-content h2 {
+		font-size: 30px;
+		margin-bottom: 15px;
+	}
+
+	.cloud-slider p {
+		color: #102A4C;
+		font-size: 16px;
+	}
+
+	.cloud-slider-cards .card .card-body img {
+		/* height: 165px; */
+		height: auto;
+	}
+
+	.cloud-slider-cards .card {
+		min-height: 550px;
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+	}
+
+	.section-header p {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+
+	.cloud-card-content h3 {
+		font-size: 24px;
+	}
+
+	.explore-our-product-slider .card p {
+		font-size: 16px;
+	}
+
+	.know-more-btn {
+		font-size: 16px;
+	}
+
+	.explore-our-product-slider .card {
+		min-height: 42em;
+	}
+
+
+	.testimonial-slide .card {
+		min-height: 510px;
+	}
+
+	.cloud-slider h2 {
+		font-size: 23px;
+	}
+
+
+	.process-section .card-body p {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.smartsheet-intergration .media-body h5 {
+		font-size: 18px;
+	}
+
+	.no-code-ui-section p {
+		font-size: 26px;
+	}
+
+	.banner-section-home>.slick-list {
+		height: 500px;
+	}
+
+	.cloudwave-success-story .banner-text {
+		font-size: 24px !important;
+		line-height: 30px;
+		margin-bottom: 10px;
+	}
+
+	.cloudwave-success-story .card-text {
+		font-size: 20px !important;
+		line-height: 26px !important;
+	}
+
+	.cloudwave-success-story .know-more-btn {
+		font-size: 12px;
+	}
+
+	.logo {
+		width: 350px;
+	}
+
+	.cloudwave-success-stories {
+		padding: 30px;
+	}
+
+	.cloud-slider-cards.cloud-slider .card-body {
+		padding: 20px;
+	}
+
+	.explore-our-product-slider .card img {
+
+		width: 70%;
+	}
+
+	.box-square-img img {
+		width: auto;
+	}
+
+	.benifit-aws.explore-our-product-slider .card {
+		min-height: 41em;
+	}
+
+	.benifit-aws.explore-our-product-slider .card img {
+		width: auto;
+		height: 200px;
+	}
+
+	.salsforce-sec-card {
+		padding: 0 30px 0 30px;
+	}
+
+	.sales-sec-img img {
+		width: 60px;
+	}
+
+	.process-section .salsforce-sec-card .card-body h4 {
+		font-size: 16px;
+	}
+
+	.smartsheet-inter img {
+		width: 30px;
+	}
+	.spacebooking-dark-sec .card {
+		margin: 0 0 30px 0;
+		padding: 20px;
+		min-height: 36rem;
+	}
+	.margin-btm-sec {
+		margin-bottom: 40px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.banner-section {
+		height: 300px;
+		background-size: 100% 300px;
+		min-height: 300px;
+	}
+
+	.header-nav {
+		height: 140px;
+	}
+
+	.banner-section-home>.slick-list {
+		height: 300px;
+	}
+
+	.cloudwave-success-stories {
+		padding: 30px;
+	}
+
+	.why-cw .blog-ol-list {
+
+		font-size: 20px;
+	}
+
+	.cloud-slider .card-body {
+		padding: 10px;
+	}
+
+	.cloud-slider-cards .card .card-body img {
+		height: auto;
+	}
+
+	.cloud-slider-cards .card {
+		min-height: 470px;
+		padding: 5px;
+	}
+
+	.cloud-service-section {
+		padding: 50px 15px 0 15px;
+	}
+
+	.explore-our-product-slider .card img {
+		height: 200px;
+		width: 200px;
+	}
+
+	.explore-our-product-slider .card {
+		min-height: 38em;
+	}
+
+	.benifit-aws .box_height {
+		min-height: 35em !important;
+	}
+
+	.explore-our-product-section {
+		padding: 50px 0 30px 0;
+	}
+
+	.card-body {
+		padding: 5px;
+	}
+
+	.our-partner-slider .slick-slide img,
+	.our-partner-slide .slick-slide img {
+
+		width: 180px !important;
+	}
+
+	.cloudwave-success-stories {
+		background-color: #e3e3e3;
+		padding: 30px;
+		margin-top: 30px;
+	}
+
+	.cloudwave-success-stories .card {
+		margin-bottom: 0;
+	}
+
+	.dialog-box-design h3 {
+		font-size: 20px;
+	}
+	.banner-section-1 {
+		padding: 20px 0;
+	}
+	.cloud-integration-banner {
+
+		background-size: 100% 400px;
+		background-image: url(https://repo.cloudwaveinc.com/img/Cloud-Integration-Page-Cover.png);
+		height: 300px !important;
+	}
+
+	.azure-section {
+		background: url(https://repo.cloudwaveinc.com/img/Azure-Page-Cover.png);
+		background-position: center;
+		background-size: cover;
+	}
+
+	.google-cloud-platform-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Google-Cloud-Platform/Google-Cloud-Platform-Page-Cover.png);
+	}
+
+	.mulisoft-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/MuleSoft-Page-Cover.png);
+	}
+
+	.salesforce1 {
+		background-image: url(https://repo.cloudwaveinc.com/img/Salesforce-Page/Salesforce-Page-Cover.png);
+	}
+
+	.smartsheet-banner {
+		background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Page/Smartsheet-Page-Cover.png);
+	}
+
+	.partners-section {
+		background: url(https://repo.cloudwaveinc.com/img/Partners-Page-Cover.png);
+		background-position: center;
+		background-size: cover;
+	}
+
+	.case-studies-section {
+		background: url(https://repo.cloudwaveinc.com/img/Case-Studies-Page-Cover.png);
+		background-position: center;
+		background-size: cover;
+	}
+
+	.careers-section {
+		/* background: url(https://repo.cloudwaveinc.com/img/Careers-Page/Careers-Page-Cover.png); */
+		background-position: center;
+		background-size: cover;
+	}
+
+	.process-section .card-body {
+		padding: 50px 0 0 0;
+	}
+
+	.sandbox-management-app-sec .sandbox-card .card-body {
+		padding: 20px;
+	}
+
+	.box-square-img {
+		width: auto;
+	}
+
+	.aws-text {
+		padding: 0;
+	}
+
+	.cloud-card-content h3 {
+		font-size: 18px;
+	}
+
+	.cloud-slider .card {
+		height: 496px;
+	}
+	.spacebooking-dark-sec .card {
+		padding: 20px;
+		margin: 0 0 30px 0;
+		min-height: 40rem;
+	}
+	.spacebooking-dark-sec .card-body {
+		padding: 0;
+	}
+	.spacebooking-dark-sec .card-body h3 {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.spacebooking-dark-sec {
+		padding-top: 50px;
+	}
+	.margin-btm-sec {
+		margin-bottom: 40px;
+	}
+	.smartsheet-capability-banner {
+		background-size: auto;
+		height: auto !important;
+		background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover.png);
+	}
+}
+
+@media only screen and (min-width: 991.98px) {
+	
+	.fa-hotel {
+		float: right;
+	}
+	.sandbox-card img {
+		padding: 20px;
+	}
+	/* .our-tec-sec .card-body {
+		padding: 20px;
+	} */
+	.img-div-partner {
+		height: 170px;
+	}
+	.process-section .card-body p {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.know-more-btn {
+		padding: 10px 20px !important;
+	}
+	.smartsheet-capability-banner {
+		background-size: auto;
+		height: auto !important;
+		background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover.png);
+	}
+}
+
+@media only screen and (max-width: 991.98px) {
+	.space-booking-video {
+		margin-bottom: 40px;
+	}
+	.cloud-slider .card {
+		height: 420px;
+		min-height: 420PX;
+	}
+	.box-square-img {
+		width: 90%;
+	}
+
+	.aws-text {
+		padding: 50px 15px 0 15px;
+	}
+
+	.sandbox-management-app-sec1 {
+		padding-bottom: 40px;
+	}
+
+	.banner-text {
+		font-size: 30px !important;
+	}
+
+	.banner-sub-text {
+		font-size: 24px !important;
+		margin-bottom: 25px;
+	}
+
+	.process-section .card-body p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.process-section .card-body {
+		padding: 50px 15px 0 15px;
+	}
+
+	.sandbox-management-app-sec .card-body {
+		padding-top: 0;
+	}
+
+	.no-code-ui-section h2 {
+		font-size: 30px;
+		color: #62AAD0;
+		margin-bottom: 20px;
+		font-weight: 400;
+	}
+
+	.no-code-ui-section p {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+
+	.process-section .card-body h3 {
+		font-size: 30px;
+		/* color: #62AAD0; */
+		font-weight: 600;
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+
+	.why-cw .blog-ol-list {
+		font-size: 16px;
+	}
+
+	.blog-ol-list {
+		font-size: 16px;
+	}
+
+	.benifits-section p {
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 32px;
+		text-align: left;
+	}
+
+	.mulisoft-content p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.card-body {
+		padding: 1rem;
+	}
+
+	.why-mulisoft-ul .card-body {
+		padding-top: 0;
+	}
+
+	.section-header .inner-text {
+		font-size: 20px;
+		line-height: 26px;
+		color: #102A4C;
+	}
+
+	.mulisoft-content h3 {
+		font-size: 24px;
+		color: #102A4C;
+		margin-bottom: 10px;
+		line-height: 26px;
+	}
+
+	.our_services-ul {
+		list-style: none;
+		font-size: 18px;
+		color: #102A4C;
+		line-height: 28px;
+	}
+
+	.mt-h2>h2 {
+		margin-top: 15px;
+	}
+
+	.test_height {
+		min-height: 29em !important;
+	}
+
+	.cloud-slider-cards .card .card-body img {
+		/* height: 120px; */
+		height: auto;
+	}
+
+	.explore-our-product-section {
+		padding: 20px;
+	}
+
+	.qualtrics-li>ul {
+		font-size: 20px !important;
+	}
+
+	.banner-content {
+		padding: 20px;
+	}
+
+	.benefits-section {
+		padding: 50px 0;
+	}
+
+	.contact-us-section {
+		background-size: 100% 400px;
+	}
+
+	.about-us-section {
+		background-size: 100% 400px;
+	}
+
+	.clients-section {
+		background-size: 100% 400px;
+	}
+
+	.careers-section {
+		background-size: 100% 400px;
+		background-image: url(https://repo.cloudwaveinc.com/img/Careers-Page/Careers-Page-Cover.png);
+	}
+
+	.news-events-section {
+		background-size: 100% 400px;
+	}
+
+	.banner-content h1 {
+		font-size: 44px;
+	}
+
+	.our-service-about-us-sec ul li {
+		font-size: 16px;
+	}
+
+	.banner-section {
+		min-height: auto;
+
+		padding: 30px 15px 0 15px;
+
+	}
+
+	.banner-section-1 {
+		min-height: auto;
+		padding: 30px 15px 0 15px;
+
+
+		height: auto;
+		/* background-color: #EDEDED; */
+	}
+
+
+	.azure-section {
+		background: url(https://repo.cloudwaveinc.com/img/Azure-Page-Cover.png);
+		background-size: 100% 450px;
+	}
+
+	.aws-banner {
+		background-image: url(https://repo.cloudwaveinc.com/img/AWS-Page-Cover.png);
+	}
+
+	.banner-content h2 {
+		font-size: 24px;
+	}
+
+	.topschools-widget h2 {
+		font-size: 16px;
+	}
+
+	.mulisoft-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/MuleSoft-Page-Cover.png);
+	}
+
+	.schools-benefit-list li {
+		font-size: 14px;
+	}
+
+	.enrollment-header h2,
+	.enrollment-header h3 {
+		font-size: 30px;
+	}
+
+	.blog-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Blogs-Page-Cover.png);
+	}
+
+	.review-user h2 {
+		font-size: 14px;
+	}
+
+	.review-content p {
+		font-size: 10px;
+	}
+
+	.newsletter-formgroup input[type="email"] {
+		width: 55%;
+	}
+
+	.newsletter-formgroup button {
+		width: 45%;
+		padding: 0 5px;
+	}
+
+	.btn-enroll-trans {
+		padding: 10px 20px;
+		font-size: 20px;
+	}
+
+	.main-nav {
+		padding: 0;
+		-ms-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+		padding-left: 0;
+		margin-bottom: 0;
+		list-style: none;
+	}
+
+	.main-nav ul {
+		background-color: #fff;
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+	}
+
+	.main-nav>li {
+		border-bottom: 1px solid #eceff1;
+		margin-left: 0;
+	}
+
+	.main-nav li+li {
+		margin-left: 0;
+	}
+
+	.main-nav>li>a {
+		line-height: 1.5;
+		padding: 15px 10px !important;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	.main-nav.bg-trans li a {
+		font-size: 16px;
+	}
+
+	.main-nav>li>a>i {
+		float: right;
+		margin-top: 5px;
+	}
+
+	.main-nav>li .submenu li a {
+		border-top: 0;
+		color: #102A4C;
+		padding: 10px 15px 10px 10px;
+	}
+
+	.main-nav>li .submenu ul li a {
+		padding: 10px 15px 10px 45px;
+	}
+
+	.main-nav>li .submenu>li.has-submenu>a::after {
+		content: "\f078";
+	}
+
+	.main-nav .has-submenu.active>a {
+		color: #62AAD0;
+	}
+
+	.main-nav .has-submenu.active .submenu li.active>a {
+		color: #62AAD0;
+	}
+
+	.login-left {
+		display: none;
+	}
+
+	.main-menu-wrapper {
+		-webkit-box-ordinal-group: 4;
+		    -ms-flex-order: 3;
+		        order: 3;
+		width: 260px;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		overflow-x: hidden;
+		overflow-y: auto;
+		z-index: 1060;
+		-webkit-transform: translateX(-260px);
+		    -ms-transform: translateX(-260px);
+		        transform: translateX(-260px);
+		-webkit-transition: all 0.4s;
+		-o-transition: all 0.4s;
+		transition: all 0.4s;
+		background-color: #ffffff;
+	}
+
+	.menu-header {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		background-color: transparent;
+	}
+
+	.navbar-header {
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+	}
+
+	#mobile_btn {
+		display: inline-block;
+	}
+
+
+	.sc-btn {
+		margin-top: 0;
+	}
+
+	.review-bot:after {
+		bottom: 15px;
+	}
+
+	/* .footer-widget {
+		margin-bottom: 20px;
+	} */
+
+	.footer .footer-bottom .copyright {
+		padding: 0 0 10px;
+	}
+
+	/* .footer .footer-top {
+		padding-top: 30px;
+	} */
+
+	.copyright-text {
+		margin-bottom: 10px;
+	}
+
+	.section-search {
+		min-height: 330px;
+	}
+
+	.section-specialities {
+		padding: 50px 0;
+	}
+
+	/* .footer-widget {
+		margin-bottom: 30px;
+	} */
+
+	.banner-wrapper {
+		max-width: 720px;
+	}
+
+	.search-box .search-info {
+		-ms-flex: 0 0 410px;
+		-webkit-box-flex: 0;
+		        flex: 0 0 410px;
+		width: 410px;
+	}
+
+	.banner-wrapper .banner-header h1 {
+		font-size: 2.125rem;
+	}
+
+	.card-label>label {
+		font-size: 12px;
+	}
+
+	/* .footer .footer-top {
+		padding-bottom: 10px;
+	} */
+
+	.time-slot li .timing.selected::before {
+		display: none;
+	}
+
+	.review-listing .recommend-btn {
+		float: none;
+	}
+
+	.call-wrapper {
+		height: calc(100vh - 140px);
+	}
+
+	.sidebar-overlay.opened {
+		display: block;
+	}
+
+	.about-content {
+		margin-bottom: 30px;
+	}
+
+	.banner-text {
+		font-size: 30px;
+		line-height: 34px;
+	}
+
+	.banner-sub-text {
+		font-size: 24px;
+		margin-bottom: 25px;
+	}
+
+
+	.section-header h2 {
+		font-size: 28px;
+		margin-bottom: 15px;
+	}
+
+	.cloud-slider .card {
+		padding: 15px;
+	}
+
+	.cloud-slider h2 {
+		font-size: 20px;
+	}
+
+	.cloud-slider p {
+		font-size: 14px !important;
+	}
+
+
+	.section-header p {
+		font-size: 14px !important;
+	}
+
+	.cloud-card-content p {
+		font-size: 16px;
+	}
+
+	.explore-our-product-slider .card p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.cloud-card-content h3 {
+		font-size: 20px;
+	}
+
+
+	.testimonial-slide img {
+		height: 60px;
+	}
+
+	.testimonial-slide .card {
+		min-height: 460px;
+	}
+
+	.careers-text-section .card .card-title {
+		font-size: 26px;
+	}
+
+	.careers-text-section .card p {
+		font-size: 18px;
+	}
+
+	.card {
+		margin-bottom: 15px;
+	}
+
+	.cloud-text-section {
+		padding: 40px 0;
+	}
+	.benifits-section {
+		padding: 0px 0;
+	}
+	.job-search .form-control {
+		height: 60px;
+	}
+
+	.banner-section-home>.slick-list {
+		height: auto;
+	}
+
+	.header-nav {
+
+		height: 80px;
+	}
+
+	.menu-bar-horiz {
+		background-color: #fff;
+	}
+
+	.main-nav.bg-trans li a {
+		color: #102A4C;
+	}
+
+	.searchbar {
+		display: none;
+	}
+
+	.slick-prev:before {
+		left: -28px;
+	}
+
+	.slick-next:before {
+		left: 28px;
+	}
+	.smca-sec .slick-prev:before {
+		left: -15px;
+	}
+	.benifit-aws {
+		padding-bottom: 0;
+		padding-top: 50px;
+	}
+
+	.banner-section {
+		height: 300px !important;
+	}
+
+	.our-partner-slider .slick-slide img.salesforce-our-partner,
+	.our-partner-slide .slick-slide img.salesforce-our-partner,
+	.our-partner-slider .slick-slide img.aws-our-partner,
+	.our-partner-slide .slick-slide img.aws-our-partner {
+		width: 120px !important;
+	}
+
+	.card-img-top.salesforce-our-partner {
+		width: 54%;
+	}
+
+	.sandbox-card img {
+		padding: 30px;
+		width: 70%;
+		margin: auto;
+	}
+
+	.sandbox-management-app-sec .sandbox-card img {
+		width: 50%;
+	}
+
+	.sandbox-download-text {
+		font-size: 30px !important;
+		line-height: 44px !important;
+	}
+
+	.salsforce-sec-card .card-body {
+		padding: 20px
+	}
+
+	.smartsheet-platin-partner-sec img {
+		margin-right: 20px;
+	}
+	.spacebooking-dark-sec .card-body {
+		padding: 0;
+	}
+	.spacebooking-dark-sec .card-body h3 {
+		font-size: 20px;
+		margin-bottom: 0;
+		line-height: 26px;
+	}
+	.space-booking-contact-us-sec .card-body h2 {
+		font-size: 36px;
+		line-height: 50px;
+	}
+	.spacebooking-dark-sec .card {
+		min-height: 32rem;
+	}
+	.margin-btm-sec {
+		margin-bottom: 30px;
+	}
+	.banner-section-1 {
+
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/1.png);
+	}
+	
+	
+
+	.cloud-integration-banner {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/8.png);
+	}
+	.google-cloud-platform-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/4.png);
+	}
+	.salesforce1 {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/2.png);
+	}
+	.smartsheet-banner {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/5.png);
+	}
+	.aws-banner {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/6.png);
+	}
+	.azure-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/7.png);
+	}
+	.spacebooking-sec {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/10.png);
+	}
+	.sanbox-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/9.png);
+	}
+	.partners-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/11.png);
+	}
+	.case-studies-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/12.png);
+	}
+	.blog-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/13.png);
+	}
+	.about-us-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/14.png);
+	}
+	.news-events-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/15.png);
+	}
+	.clients-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/16.png);
+	}
+	.careers-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/17.png);
+	}
+	.contact-us-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/18.png);
+	}
+	
+	.mulisoft-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/3.png);
+	}
+	.social-img-white.social-img-sec img {
+		width: 35px;
+		margin: 5px;
+	}
+	.footer .footer-top .footer-title {
+		font-size: 16px;
+		margin-bottom: 2px;
+	  }
+	  .footer .footer-top .footer-widget.footer-menu ul li a {
+		font-size: 12px;
+	  }
+	  .footer .footer-top {
+		padding: 50px 20px;
+	}
+	.smartsheet-capability-banner {
+		background-size: auto;
+		height: auto !important;
+		background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover-tab.png);
+	}
+	.smartsheet-capability-banner {
+		padding: 30px 0 50px;
+	}
+}
+
+@media only screen and (max-width: 849.98px) {
+	.row.row-grid>div {
+		-ms-flex: 0 0 100%;
+		-webkit-box-flex: 0;
+		        flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 767.98px) {
+	.platinum-partner-logo {
+		width: 60%;
+	}
+	.smartsheet-capability-banner {
+		padding: 30px 0 50px;
+	}
+	.process-section .card-body h2 {
+		font-size: 40px;
+	}
+	.footer .footer-top .footer-title {
+		font-size: 16px;
+	  }
+	.clients-section {
+		background-size: 100% 350px;
+	}
+
+	.banner-section {
+		height: 350px;
+		background-size: 100% 350px;
+	}
+
+	.cloudwave-success-stories .card-img {
+		border-radius: 0;
+		margin-bottom: 30px;
+	}
+
+	.copyright-text ul {
+		float: none;
+	}
+
+	.cloud-slider-cards .card {
+		min-height: 490px;
+
+	}
+
+	.banner-section-home>.slick-list {
+		height: 300px;
+	}
+
+	.cloud-service-section {
+		padding: 30px 15px 0 15px;
+	}
+
+	h1,
+	.h1 {
+		font-size: 2rem;
+	}
+
+	h2,
+	.h2 {
+		font-size: 1.75rem;
+	}
+
+	h3,
+	.h3 {
+		font-size: 1.375rem;
+	}
+
+	h4,
+	.h4 {
+		font-size: 1rem;
+	}
+
+	h5,
+	.h5 {
+		font-size: 0.875rem;
+	}
+
+	h6,
+	.h6 {
+		font-size: 0.75rem;
+	}
+
+	.content {
+		padding: 15px 0 0;
+	}
+
+	.account-page .content {
+		padding: 15px 0;
+	}
+
+	.container-fluid {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.card {
+		margin-bottom: 20px;
+	}
+
+	.process-section .card-body {
+		padding: 30px 15px 0 15px;
+	}
+
+	.why-mulisoft-ul {
+		padding: 30px;
+	}
+
+	.why-mulisoft-ul .card-body {
+		padding-top: 0;
+	}
+
+	.box_height {
+		min-height: 42em !important;
+
+	}
+
+	.process-section {
+		padding-top: 0;
+	}
+
+	.mulisoft-sec .media {
+		display: block;
+	}
+
+	.mulisoft-icon-img {
+		width: 40% !important;
+		margin-bottom: 30px !important;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		margin: 0 auto !important;
+	}
+
+	.breadcrumb-bar {
+		height: auto;
+	}
+
+	.banner-wrapper .banner-header h1 {
+		font-size: 2rem;
+	}
+
+	.banner-wrapper .banner-header p {
+		font-size: 0.9rem;
+	}
+
+	.section-header h2 {
+		font-size: 1.875rem;
+	}
+
+	.section-header .sub-title {
+		font-size: 0.875rem;
+	}
+
+	.footer-title {
+		font-size: 1.125rem;
+	}
+
+	.search-box {
+		max-width: 535px;
+		margin: 0 auto;
+	}
+
+	.search-box form {
+		-ms-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+		word-wrap: break-word;
+		background-clip: border-box;
+	}
+
+	.search-box .search-location {
+		-ms-flex: 0 0 100%;
+		-webkit-box-flex: 0;
+		        flex: 0 0 100%;
+		width: 100%;
+	}
+
+	.search-box .search-info {
+		-ms-flex: 0 0 100%;
+		-webkit-box-flex: 0;
+		        flex: 0 0 100%;
+		width: 100%;
+	}
+
+	.search-box .search-btn {
+		-ms-flex: 0 0 100%;
+		-webkit-box-flex: 0;
+		        flex: 0 0 100%;
+		min-height: 46px;
+		width: 100%;
+	}
+
+	.search-box .search-btn span {
+		display: inline-block;
+		margin-left: 5px;
+		text-transform: uppercase;
+	}
+
+	.section-search {
+		background: #f9f9f9;
+	}
+
+	.day-slot li span {
+		font-size: 16px;
+		text-transform: unset;
+	}
+
+	.time-slot li .timing span {
+		display: block;
+	}
+
+	.submit-section.proceed-btn {
+		margin-bottom: 20px;
+	}
+
+	.banner-content h2 {
+		font-size: 20px;
+	}
+
+	.banner-content h1 {
+		font-size: 30px;
+	}
+
+	.section-search,
+	.section-sender,
+	.section-features {
+		padding: 50px 0;
+	}
+
+
+	.specialities-slider .slick-slide {
+		margin-right: 15px;
+	}
+
+	.about-content a {
+		padding: 12px 20px;
+	}
+
+	.submit-section .submit-btn {
+		padding: 10px 20px;
+		font-size: 15px;
+		min-width: 105px;
+	}
+
+	.btn.btn-danger.trash {
+		margin-bottom: 20px;
+	}
+
+	.nav-tabs.nav-tabs-bottom>li>a.active,
+	.nav-tabs.nav-tabs-bottom>li>a.active:hover,
+	.nav-tabs.nav-tabs-bottom>li>a.active:focus {
+		background-color: #f5f5f5;
+	}
+
+	.nav-tabs.nav-justified {
+		border-bottom: 1px solid #ddd;
+	}
+
+	.nav-tabs.nav-justified>li>a.active,
+	.nav-tabs.nav-justified>li>a.active:hover,
+	.nav-tabs.nav-justified>li>a.active:focus {
+		border-color: transparent transparent transparent #62AAD0;
+		border-left-width: 2px;
+	}
+
+	.nav-tabs {
+		border-bottom: 0;
+		position: relative;
+		background-color: #fff;
+		padding: 5px 0;
+		border: 1px solid #ddd;
+		border-radius: 3px;
+	}
+
+	.nav-tabs .nav-item {
+		margin-bottom: 0;
+	}
+
+	.nav-tabs>li>a {
+		border-width: 2px;
+		border-left-color: transparent;
+	}
+
+	.nav-tabs .nav-link {
+		border-width: 2px;
+	}
+
+	.nav-tabs>li>a:hover,
+	.nav-tabs>li>a:focus {
+		background-color: #fafafa;
+	}
+
+	.nav-tabs .nav-item.show .nav-link,
+	.nav-tabs .nav-link.active,
+	.nav-tabs>li>a.active,
+	.nav-tabs>li>a.active:hover,
+	.nav-tabs>li>a.active:focus {
+		border-color: transparent transparent transparent #62AAD0 !important;
+		border-left-width: 2px;
+	}
+
+	.nav-tabs>li.open:not(.active)>a,
+	.nav-tabs>li.open:not(.active)>a:hover,
+	.nav-tabs>li.open:not(.active)>a:focus {
+		background-color: #fafafa;
+	}
+
+	.nav-tabs.nav-tabs-solid {
+		padding: 5px;
+	}
+
+	.nav-tabs.nav-tabs-solid.nav-tabs-rounded {
+		border-radius: 5px;
+	}
+
+	.nav-tabs.nav-tabs-solid>li>a {
+		border-left-width: 0 !important;
+	}
+
+	.nav-tabs-justified {
+		border-bottom: 1px solid #ddd;
+	}
+
+	.nav-tabs-justified>li>a.active,
+	.nav-tabs-justified>li>a.active:hover,
+	.nav-tabs-justified>li>a.active:focus {
+		border-width: 0 0 0 2px;
+		border-left-color: #62AAD0;
+	}
+
+	.slider-section-header p {
+		font-size: 12px;
+	}
+
+	body {
+		font-size: 0.75rem;
+	}
+
+
+	.user-tabs {
+		margin-top: 1.5rem;
+	}
+
+	.user-tabs .nav-tabs>li>a {
+		border-left: 2px solid transparent;
+		border-bottom: 0;
+		padding: 0.5rem 1rem;
+	}
+
+	.user-tabs .nav-tabs.nav-tabs-bottom>li>a.active,
+	.user-tabs .nav-tabs.nav-tabs-bottom>li>a.active:hover,
+	.user-tabs .nav-tabs.nav-tabs-bottom>li>a.active:focus {
+		border-left-width: 2px;
+		color: #20c0f3;
+	}
+
+	.row.row-grid>div {
+		-ms-flex: 0 0 50%;
+		-webkit-box-flex: 0;
+		        flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.breadcrumb-bar .breadcrumb-title {
+		font-size: 18px;
+	}
+
+	.appointment-tab .nav-tabs {
+		padding: 1.5rem;
+	}
+
+	.submit-btn-bottom {
+		margin-bottom: 20px;
+	}
+
+	.enrollment-header {
+		text-align: center;
+	}
+
+	.slider-section-header {
+		margin: 0 0 30px;
+		text-align: center;
+	}
+
+
+	.f-dir {
+		-webkit-box-orient: vertical !important;
+		-webkit-box-direction: normal !important;
+		    -ms-flex-direction: column !important;
+		        flex-direction: column !important;
+	}
+
+	.txt-ali {
+		text-align: center;
+	}
+
+	.m-left {
+		margin-left: 40% !important;
+	}
+
+	.f-size {
+		font-size: 1.75rem;
+	}
+
+	.real-img-flex {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+
+	.f-size-h {
+		font-size: 30px !important;
+	}
+
+	.blog-section {
+		background-position: right;
+		background-size: cover;
+	}
+
+	.cloud-integration-banner {
+		background-size: 100% 300px;
+		height: 300px;
+	}
+
+	.aws-banner {
+		background-image: url(https://repo.cloudwaveinc.com/img/AWS-Page-Cover.png);
+	}
+
+	.box-square-img {
+		width: 50%;
+	}
+
+	.aws-text .card-body {
+		padding-top: 50px;
+	}
+
+	.benifit-aws .box_height {
+		min-height: 48em !important;
+	}
+
+	.benifit-aws.explore-our-product-slider .card img {
+		height: 170px;
+		width: 170px;
+	}
+
+	.sandbox-download-text {
+		font-size: 20px !important;
+		line-height: 34px !important;
+	}
+
+	.sandbox-card img {
+		padding: 15px;
+		width: 45%;
+	}
+
+	.card-img-top.salesforce-our-partner {
+		width: 38%;
+
+	}
+
+	.img-div-partner .card-img-top {
+		padding: 15px;
+		width: 80%;
+	}
+
+	.img-div-partner {
+		height: 125px;
+	}
+	.img-div-partner .card-img-top.salesforce-our-partner {
+		
+		width: 50%;
+	}
+	.aws-text .card-body.dwnlod-text-app {
+		padding-top: 30px;
+	}
+
+	.arrow-img-sec {
+		margin-top: 30px;
+	}
+
+	.sanbox-section img {
+		width: 60%;
+	}
+
+	.salsforce-sec-card .card-body {
+		padding: 20px;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+
+	.smartsheet-inter img {
+		width: 30px;
+	}
+
+	.benifits-section p {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 26px;
+		text-align: left;
+	}
+
+	.cloudwave-salesforce-service-sec .mulisoft-icon-img {
+		width: 30% !important;
+		margin-bottom: 30px !important;
+	}
+
+	.process-section .card-body h3 {
+		font-size: 28px;
+	}
+	.spacebooking-dark-sec .card-body {
+		padding: 20px;
+	}
+	.spacebooking-dark-sec .card img {
+		width: 45%;
+	}
+	.spacebooking-dark-sec .card-body h3 {
+		margin-top: 0;
+	}
+	.spacebooking-dark-sec .card {
+		min-height: 27rem;
+	}
+	.spacebooking-dark-sec {
+		padding: 50px 15px 0 15px;
+	}
+	.space-booking-stemline-sec .card-body h2 {
+		margin-bottom: 15px!important;
+	}
+	.heading-img {
+		display: none;
+	}
+	.banner-sub-sub-text {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+	.smartsheet-capability-banner {
+		background-size: auto;
+		height: auto !important;
+		background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover.png);
+	}
+}
+
+@media only screen and (max-width: 575.98px) {
+	.banner-sub-sub-text {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+	a[class="disable-link"] {
+		pointer-events: auto !important;
+		cursor: auto !important;
+	 }
+	.space-booking-video {
+		margin-bottom: 30px;
+	}
+	.contact-us-sec .know-more-btn {
+		font-size: 18px;
+	}
+
+	.header-nav {
+		height: 50px;
+	}
+
+	.width-100 {
+		width: 100% !important;
+		padding: 5px;
+	}
+
+	body {
+		font-size: 0.75rem;
+	}
+
+	.qualtrics-li>ul {
+		font-size: 16px !important;
+	}
+
+	h1,
+	.h1 {
+		font-size: 1.75rem;
+	}
+
+	h2,
+	.h2 {
+		font-size: 1.5rem;
+	}
+
+	h3,
+	.h3 {
+		font-size: 1.25rem;
+	}
+
+	h4,
+	.h4 {
+		font-size: 1rem;
+	}
+
+	h5,
+	.h5 {
+		font-size: 0.875rem;
+	}
+
+	h6,
+	.h6 {
+		font-size: 0.75rem;
+	}
+
+	.flex-wraap {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+
+	.f-size-h {
+		font-size: 22px !important;
+	}
+
+	.banner-sub-text-home {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.navbar-header {
+		padding: 0 36px;
+	}
+
+	.img-fluid-w {
+		padding-left: 10px;
+	}
+
+	.xcavate-li {
+		font-size: 18px;
+		line-height: 28px;
+		color: #102A4C;
+		list-style-type: none;
+	}
+
+	.card {
+		margin-bottom: 0.9375rem;
+	}
+
+	.SF-width {
+		width: 100%;
+	}
+
+	.card-body {
+		padding: 1.2rem;
+	}
+
+	.card-header {
+		padding: 0.75rem 1.25rem;
+	}
+
+	.card-footer {
+		padding: 0.75rem 1.25rem;
+	}
+
+	.header-nav {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.header-navbar-rht {
+		display: none;
+	}
+
+	.main-nav li.login-link {
+		display: block;
+	}
+
+	.navbar-header {
+		width: 100%;
+	}
+
+	.mulisoft-sec .media {
+		display: block;
+	}
+
+	.mulisoft-icon-img {
+		width: auto !important;
+		margin-bottom: 30px;
+	}
+
+	#mobile_btn {
+		left: 0;
+		margin-right: 0;
+		padding: 0 15px;
+		position: absolute;
+		z-index: 99;
+	}
+
+	.navbar-brand.logo {
+		width: 100%;
+		text-align: center;
+		margin-right: 0;
+	}
+
+	.navbar-brand.logo img {
+		height: 45px;
+	}
+
+	.navbar>li>i {
+		width: 34px;
+		height: 34px;
+		font-size: 12px;
+		line-height: 19px;
+
+	}
+
+	.banner-section {
+
+		background-color: #102A4C !important;
+
+	}
+
+	.search-box form {
+		display: block;
+	}
+
+	.search-box .search-location {
+		width: 100%;
+		-ms-flex: none;
+		-webkit-box-flex: 0;
+		        flex: none;
+	}
+
+	.search-box .search-info {
+		width: 100%;
+		-ms-flex: none;
+		-webkit-box-flex: 0;
+		        flex: none;
+	}
+
+	.banner-wrapper .banner-header h1 {
+		font-size: 28px;
+	}
+
+
+	.section-header h2 {
+		font-size: 21px !important;
+	}
+
+	.testimonial-header {
+		font-size: 1.875rem !important;
+	}
+
+	.section-header .sub-title {
+		font-size: 0.875rem;
+	}
+
+	.speicality-item p {
+		font-size: 0.775rem;
+	}
+
+
+	.footer-title {
+		font-size: 1.125rem;
+	}
+
+	.user-tabs .med-records {
+		min-width: 110px;
+	}
+
+	.pagination-lg .page-link {
+		font-size: 1rem;
+		padding: 0.5rem 0.625rem;
+	}
+
+	.row.row-grid>div {
+		-ms-flex: 0 0 100%;
+		-webkit-box-flex: 0;
+		        flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.edit-link {
+		font-size: 14px;
+		margin-top: 2px;
+	}
+
+	.change-avatar .profile-img img {
+		height: 80px;
+		width: 80px;
+	}
+
+	.submit-btn-bottom {
+		margin-bottom: 0.9375rem;
+	}
+
+	.copyright-text ul {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+	}
+
+	.read-more {
+		font-size: 14px;
+	}
+
+
+	.banner-text {
+		font-size: 24px !important;
+		margin-bottom: 15px;
+		line-height: 28px;
+	}
+
+	.banner-sub-text {
+		font-size: 20px !important;
+		margin-bottom: 15px !important;
+	}
+
+	.pmb-0 {
+		margin-bottom: 1rem !important;
+	}
+
+	.banner-section {
+		min-height: auto;
+	
+	}
+
+	.banner-section-1 {
+		min-height: 220px;
+	}
+
+
+	.cloud-service-section {
+		padding: 20px 0;
+	}
+	.our-service-sec.cloud-service-section {
+		padding: 15px;
+	}
+	.cloud-slider .card {
+		padding: 10px;
+		height: 270PX;
+	}
+
+	.cloud-slider-cards .card .card-body img {
+		height: auto;
+		width: 60%;
+	}
+	.aws-home-logo, .salesforce-home-logo {
+		width: 130px !important;
+	}
+	.testimonial-slide .card {
+		min-height: 415px;
+	}
+
+	.cloud-text-section {
+		padding: 20px 0;
+	}
+
+	.process-section .card-body h3 {
+		font-size: 24px;
+		margin-bottom: 5px;
+		line-height: 26px;
+		font-weight: 500;
+	}
+
+	.mulisoft-sec .card-body h3 {
+		font-size: 18px;
+	}
+
+	.process-section .card-body {
+		padding: 20px 15px 0 15px;
+	}
+
+	.process-section .card-body p {
+		font-size: 16px;
+	}
+
+	.inter-cloudwave .card-body {
+		padding: 10px;
+	}
+
+	.section-header h2 {
+		line-height: 30px;
+	}
+
+	.banner-sub-text {
+		font-size: 16px !important;
+		line-height: 28px;
+	}
+
+	.contact-us .form-group label {
+		font-size: 18px;
+		color: #102A4C;
+	}
+
+	.contact-us input {
+		height: 50px;
+		font-size: 18px;
+	}
+
+	.mulisoft-content p {
+		font-size: 14px;
+		color: #102A4C;
+		line-height: 20px;
+	}
+
+	.integration-section .card-body p {
+		line-height: 22px;
+		font-size: 16px;
+	}
+
+
+	.miravista-section p {
+		font-size: 14px;
+	}
+
+
+	.salesforce-consult-partner-sec .media {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+
+	}
+
+	.salesforce-consult-partner-sec img {
+		width: auto;
+	}
+
+	.cloudwave-salesforce-service-sec .mulisoft-icon-img {
+		width: 50% !important;
+		margin-bottom: 20px !important;
+	}
+
+	.copyright-text ul {
+		/* width: 28%; */
+		margin-left: 36%;
+	}
+
+	.breadcrumb-bar a {
+		font-size: 14px;
+	}
+
+	.footer-bottom .copyright-text p {
+		text-align: center;
+	}
+
+	.salesforce1 {
+		padding: 10px 20px;
+		background-position: bottom;
+		background-size: 100% 250px;
+		background-color: white !important;
+		background: none;
+		height: 250px;
+	}
+
+	.salesforce2 {
+		background: url(https://repo.cloudwaveinc.com/img/SALESFORCE-responsive1.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 250px;
+		background-position: center;
+		padding-top: 65px;
+		height: 250px;
+	}
+
+	.banner-section {
+		padding: 25px 20px;
+		background-position: bottom;
+		background-size: 100% 350px;
+		height: 350px;
+	}
+
+	.cloud-integration-banner {
+		background-size: 100% 350px;
+		height: 350px !important;
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/8.png);
+	}
+	.smartsheet-capability-banner {
+		background-size: auto;
+		height: auto !important;
+		background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Capabilities-Page/smartsheet-capability-cover-mobile.png);
+	}
+	.aws-banner {
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/6.png);
+	}
+	.partners-section {
+		background-size: 100% 240px;
+		height: 240px !important;
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/11.png);
+	}
+
+	.case-studies-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Case-Studies-Page-Cover.png);
+		background-size: 100% 190px;
+		height: 190px !important;
+	}
+
+	.salesforce1 {
+		background: url(https://repo.cloudwaveinc.com/img/Mobile-Size/2.png);
+		background-size: 100% 295px;
+     height: 295px !important;
+	}
+
+	.banner-section-1 {
+		padding: 10px;
+		background-position: bottom;
+		background-size: 100% 295px;
+		/* background-color: #ededed; */
+		height: auto;
+		background-repeat: no-repeat;
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/1.png);
+	}
+	.spacebooking-sec {
+		
+		background-repeat: no-repeat;
+		background-size: 100% 250px;
+		background-position: center;
+		padding-top: 65px;
+		height: 250px!important;
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/10.png);
+	}
+	.w-image-space {
+		width: 90% !important;
+	}
+	.spacebooking-dark-sec .card img {
+		width: 50%;
+	}
+	.spacebooking-dark-sec .card .cloud-card-content h3 {
+		margin-top: 0;
+	}
+	.space-booking-contact-us-sec h2 {
+		font-size: 26px !important;
+	}
+	.form-group {
+		margin-bottom: 20px;
+	}
+	.spacebooking-dark-sec .card {
+		padding: 10px;
+		min-height: 26rem;
+	}
+	.our-service-about-us-sec ul li {
+		font-size: 16px;
+	}
+
+	.smartsheet-platin-partner-sec .media {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	.smartsheet-platin-partner-sec .media img {
+		width: 100% !important;
+	}
+
+	.smartsheet-inter .media img {
+		width: 25px;
+		-webkit-box-align: start !important;
+		    -ms-flex-align: start !important;
+		        align-items: flex-start !important;
+	}
+
+
+	.banner-section-home>.slick-list {
+		height: auto;
+	}
+
+	.box_height {
+		min-height: 30em !important;
+	}
+
+	.explore-our-product-slider .card {
+		padding: 0;
+		margin-bottom: 15px;
+	}
+
+	.benifit-aws .box_height {
+		min-height: 35em !important;
+	}
+
+	.cloudwave-success-stories {
+		margin-top: 25px;
+		padding: 10px !important;
+	}
+
+	.cloudwave-success-stories h3 {
+		font-size: 20px;
+		font-weight: 600;
+		color: #102A4C;
+		line-height: 24px;
+		margin-top: 10px;
+	}
+
+	.cloudwave-success-stories p {
+		font-size: 14px;
+		color: #102A4C;
+	}
+
+	.find-us-on-social-media {
+		text-align: center;
+		padding: 36px 0 0 0;
+	}
+
+	.find-us-on-social-media h2 {
+		font-size: 18px;
+	}
+
+	.social-img-sec img {
+		width: 50px;
+		margin: 10px;
+	}
+
+	.dialog-box-design p {
+		color: #fff;
+		font-weight: 400;
+		font-size: 16px;
+		text-align: justify;
+		line-height: 26px;
+	}
+
+	.test_height {
+		min-height: 28em !important;
+	}
+
+	.box1.dialog-box-design::before,
+	.box2.dialog-box-design::before {
+		content: none;
+	}
+
+	.cloudwave-success-stories .card-body {
+		padding: 0;
+	}
+
+	.slick-track {
+		max-height: 5%;
+	}
+
+	.smartsheet-intergration {
+		padding: 20px 0;
+	}
+
+	h5 {
+		font-size: 15px;
+	}
+
+	.no-code-ui-section {
+		padding: 10px 0;
+	}
+
+	.no-code-ui-section h2 {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+
+	.no-code-ui-section p {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+
+
+	.smartsheet-banner .banner-sub-text {
+		color: #00104a;
+	}
+
+	.cloud-integration-banner h4 {
+		font-size: 20px !important;
+		margin-bottom: 10px;
+	}
+
+	.cloud-integration-banner h2 {
+		font-size: 24px;
+		padding-top: 0px;
+	}
+
+	.know-more-btn {
+		font-size: 12px;
+		line-height: 20px;
+		margin-bottom: 30px;
+	}
+
+	.mt-7 {
+		margin-top: 0;
+	}
+
+	.mulisoft-content {
+		font-size: 28px;
+	}
+
+	.mulisoft-content p {
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+
+	
+
+	.mulisoft-section .banner-text {
+		font-size: 18px;
+	}
+
+	.mulisoft-card img {
+		width: 60px;
+	}
+
+	.section-header .inner-text {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.sales-text-section {
+		padding: 0 !important;
+	}
+
+	.wdh_100 {
+		width: 100%;
+	}
+
+	.cloud-card-content p {
+		font-size: 12px;
+		line-height: 22px;
+	}
+
+	.cloud-card-content h3 {
+		font-size: 25px;
+	}
+
+	.cloud-card-content h3 {
+		font-size: 16px;
+	}
+
+	.sales-text-section .media-body p {
+		font-size: 18px;
+	}
+
+	.careers-section {
+		background-position: inherit;
+		background-size: 100% 250px;
+		height: 250px !important;
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/17.png);
+	}
+	.contact-us-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/18.png);
+		background-size: 100% 250px;
+		height: 250px !important;
+	}
+	.mulisoft-section {
+		width: 100%;
+		background-size: 100% 250px !important;
+		margin-bottom: 0;
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/3.png);
+	}
+	.explore-our-product-section {
+		padding: 15px!important;
+	}
+	.platinum-partner-logo {
+		width: 80%;
+	}
+	.careers-text-section .card .card-title {
+		font-size: 20px;
+	}
+
+	.careers-text-section .card p {
+		font-size: 14px;
+	}
+
+	.case-studies-section {
+		background-position: center;
+		margin-bottom: 10px;
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/12.png);
+	}
+
+	.blog-section {
+		background-position: right;
+		background-size: cover;
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/13.png);
+	}
+	.about-us-section { 
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/14.png);
+		background-size: 100% 250px;
+		height: 250px!important;
+	}
+	.news-events-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/15.png);
+		background-size: 100% 250px;
+		height: 250px!important;
+	}
+	.clients-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/16.png);
+		background-size: 100% 295px;
+		height: 295px;
+	}
+	.benifits-section h3 {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+
+	.benifits-section {
+		padding: 10px 0;
+	}
+
+	.flex {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	.process-section {
+		padding-top: 20px;
+	}
+
+	.cons-sec .card-body {
+		padding: 10px;
+	}
+
+	.sandbox-management-app-sec1 img {
+		width: 40%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	.process-section .card-body p {
+		line-height: 22px;
+		font-weight: 400;
+	}
+
+	.space-text-font {
+		margin-bottom: 15px !important;
+	}
+
+	.mulisoft-content h3 {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+
+	.our-core-value-sec-careers,
+	.submit-resume-sec {
+		padding-top: 0;
+	}
+
+	.mulisoft-card .card-body {
+		padding: 10px;
+	}
+
+	.benifits-section p {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 26px;
+	}
+
+	.process-section .card-body h2 {
+		font-size: 28px;
+		line-height: 34px;
+	}
+
+	.process-section .card-body h4 {
+		font-size: 18px;
+	}
+
+	.cons-sec .card-body h4 {
+		font-size: 16px;
+	}
+
+	.process-section .salsforce-sec-card .card-body h4 {
+		font-size: 16px;
+	}
+
+	.cloudwave-salesforce-service-sec .card-title {
+		font-size: 17px !important;
+	}
+
+	.sanbox-solo-sec a {
+		font-size: 17px;
+	}
+
+	.sales-sec-img img {
+		width: 40px;
+	}
+
+	.arrowdown-img {
+		width: 10px;
+	}
+
+	.why-mulisoft-ul {
+		padding: 10px;
+	}
+
+	.slick-next:before,
+	.slick-prev:before {
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.slick-prev,
+	.slick-next {
+		width: 30px;
+		height: 50px;
+	}
+
+	.cloud-slider-cards .card {
+		min-height: 200px;
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+		margin-bottom: 0;
+		height: 310px;
+	}
+
+
+	.cloud-slider .card-body {
+		padding: 8px;
+	}
+
+	.cloud-slider h2 {
+		font-size: 14px;
+	}
+
+	.smartsheet-intergration .media {
+		margin-bottom: 20px;
+	}
+
+	.smartsheet-intergration .media img {
+		width: 60px;
+	}
+
+	.smartsheet-intergration {
+		margin-bottom: 20px;
+	}
+
+	.smartsheet-intergration .section-header h2 {
+		margin-bottom: 20px;
+	}
+
+	.smartsheet-intergration .media-body h5 {
+		font-size: 16px;
+	}
+
+	.sales-text-section .media img {
+		width: 55px;
+	}
+
+	.sales-text-section .know-more-btn {
+		margin-top: 25px;
+	}
+
+	.sales-text-section h3 {
+		font-size: 16px;
+	}
+
+	.sales-text-section .salesforce-img {
+		width: 170px;
+	}
+
+	.sales-text-section .card {
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.app-img {
+		height: 45px;
+	}
+
+	.m-b {
+		padding-bottom: 20px !important;
+	}
+
+	.sanbox-section {
+		background-size: 100% 250px;
+		height: 250px !important;
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/9.png);
+	}
+	.sanbox-section .container-fluid{
+		margin: auto;
+	}
+	.sanbox-section img {
+		width: 80%;
+	}
+
+	.xcavate-section {
+		background-position: center;
+	}
+
+	.azure-section,
+	.google-cloud-platform-section {
+		background-position: inherit;
+	}
+
+	.smartsheet-banner {
+		background-position: bottom left;
+		background-size: contain;
+		background-color: #15b2d5;
+
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/5.png);
+		background-repeat: no-repeat;
+
+	}
+	.img-div-partner .card-img-top {
+		padding: 0px;
+		width: 65%;
+	}
+	.img-div-partner .card-img-top.salesforce-our-partner {
+		width: 40%;
+		margin-bottom: 20px;
+	}
+	.wi-50 {
+		width: 50%;
+	}
+	.img-div-partner {
+		height: 215px;
+	}
+	.real-img-flexs {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.banner-text-main {
+		padding-left: 15px;
+		margin-top: 16px;
+	}
+
+	.sanbox-section .banner-text-main {
+
+		margin-top: 0px;
+	}
+
+	.cloud-slider p {
+		font-size: 12px;
+		line-height: 22px;
+	}
+
+	/* .process-section .card-body h2 {
+		font-size: 30px;
+	} */
+
+	.cloudwave-salesforce-service-sec img {
+		width: 50% !important;
+	}
+
+	.cloud-slider-cards.cloud-slider .card-body {
+		padding: 0px;
+	}
+	.social-img-white.social-img-sec img {
+		width: 25px;
+		margin: 5px;
+	}
+	.footer-about-content p {
+		font-size: 10px;
+	}
+	.footer .footer-top .footer-widget.footer-menu ul li a {
+		font-size: 10px;
+	}
+	.footer .footer-top .footer-title {
+		font-size: 14px;
+	}
+}
+
+
+@media only screen and (max-width: 479px) {
+	.section-search {
+		min-height: 410px;
+		padding: 30px 15px;
+	}
+
+	.copyright-text img {
+		width: 20px;
+	}
+
+	.copyright-text ul {
+		text-align: center;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+
+	.cloud-integration-banner {
+		background-color: #62AAD0;
+		/* background-image: url(https://repo.cloudwaveinc.com/img/CloudIntegrationServices.jpg); */
+		/* background-image: url(https://repo.cloudwaveinc.com/img/AWS-Page-Cover.png); */
+		background-size: 100% 250px;
+		background-repeat: no-repeat;
+		height: 250px !important;
+	}
+	.google-cloud-platform-section {
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/4.png);
+	}
+	.azure-section {
+		background: url(https://repo.cloudwaveinc.com/img/Mobile-Size/7.png);
+		background-size: cover;
+	}
+	.copyright-text {
+		text-align: center;
+	}
+	.smartsheet-capability-banner {
+		background-size: auto;
+		height: auto !important;
+		background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Capabilities-Page/smartsheet-capability-cover-mobile.png);
+	}
+	.feature-client-slider {
+		padding: 15px;
+	}
+}
+
+
+.btn {
+	padding: 0.75rem;
+}
+
+@media (max-width: 480px) {
+	.process-section-t {
+		padding-top: 10px !important;
+	}
+}
+
+.case-study-img {
+	margin-bottom: 30px;
+}
+@media only screen and (max-width: 430.98px){
+	
+}
+
+
+	/*-----------------
+	Landing Page Banner Mobile Rsponsive
+-----------------------*/
+
+@media only screen and (max-width: 480px) {
+
+	.banner-guide {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		padding: 20px 0px;
+	}
+	.guide-img{
+		width: 50%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.guide-heading{
+		font-size: 35px !important;
+		margin-top: 20px;
+		margin-bottom: 20px; 
+	}
+
+	.guide-subheading{
+		font-size: 25px !important;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.guide-content{
+		font-size: 16px !important;
+	}
+
+
+	.download-form .form-group{
+		margin-bottom: 15px;
+	}
+
+	.download-form .form-group, lable{
+		font-size: 16px;
+	}
+
+	.download-form .btn-block{
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30px;
+	}
+
+	.block-sale-img img{
+		width: 40px;
+		float: left;
+	}
+
+	.block-sale-img{
+		font-size: 18px;
+		font-weight: 500;
+		padding-bottom: 15px;
+	}
+
+}

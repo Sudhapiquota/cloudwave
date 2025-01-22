@@ -2477,7 +2477,7 @@ html.menu-opened body {
 
 .slick-prev:before {
 	content: "";
-	background: url("../img/slider-arrow-left.png");
+	background: url("https://repo.cloudwaveinc.com/img/slider-arrow-left.png");
 	position: absolute;
 	top: 0px;
 	left: -80px;
@@ -2503,7 +2503,7 @@ html.menu-opened body {
 
 .slick-next:before {
 	content: "";
-	background: url("../img/slider-arrow-right.png");
+	background: url("https://repo.cloudwaveinc.com/img/slider-arrow-right.png");
 	position: absolute;
 	top: 0px;
 	left: 80px;
@@ -2626,7 +2626,7 @@ html.menu-opened body {
 
 .banner-section {
 	position: relative;
-	background: url(../img/home-page/banner-imag-cover-1.png);
+	background: url(https://repo.cloudwaveinc.com/img/home-page/banner-imag-cover-1.png);
 	background-position: bottom;
 	background-size: 100% 400px;
 	background-repeat: no-repeat;
@@ -2641,7 +2641,7 @@ html.menu-opened body {
 
 .banner-section-1 {
 	position: relative;
-	background: url(../img/home-page/banner-imag-cover-1.png);
+	background: url(https://repo.cloudwaveinc.com/img/home-page/banner-imag-cover-1.png);
 	background-position: bottom;
 	background-size: 100% 400px;
 	background-repeat: no-repeat;
@@ -3151,25 +3151,40 @@ html.menu-opened body {
 .smartsheet-intergration .section-header h2 {
 	margin-bottom: 50px;
 }
+/*--------------------------------
+	CW AI
+---------------------------------*/
+.cw-ai-banner {
+	background: url(https://repo.cloudwaveinc.com/img/cw-ai-cover.png) !important;
+	background-repeat: no-repeat;
+	background-size: 100% 400px;
+	background-size: cover !important;
+	background-position: center;
+	/* padding-top: 20px; */
+}
+
+.ai-vid{
+	padding-top: 60px;
+}
 
 /*---------------------------------
 	Cloud Integration
 ------------------------------------*/
 .cloud-integration-banner {
 	background: #fff;
-	background-image: url(../img/Cloud-Integration-Page-Cover.png);
+	background-image: url(https://repo.cloudwaveinc.com/img/Cloud-Integration-Page-Cover.png);
 	background-size: 100% 400px;
 	background-repeat: no-repeat;
 	height: 400px !important;
 }
 
 .smartsheet-banner {
-	background-image: url(../img/Smartsheet-Page/Smartsheet-Page-Cover.png);
+	background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Page/Smartsheet-Page-Cover.png);
 	background-repeat: no-repeat;
 }
 .smartsheet-capability-banner {
 	background: #fff;
-	background-image: url(../img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover.png);
+	background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover.png);
 	background-size: auto;
 	background-repeat: no-repeat;
 	height: auto !important;
@@ -3300,7 +3315,7 @@ html.menu-opened body {
 	Careers
 -------------------*/
 .careers-section {
-	background: url(../img/Careers-Page/Careers-Page-Cover.png);
+	background: url(https://repo.cloudwaveinc.com/img/Careers-Page/Careers-Page-Cover.png);
 	background-color: #ccc;
 	background-repeat: no-repeat;
 	background-size: 100% 500px;
@@ -3351,7 +3366,7 @@ html.menu-opened body {
 }
 
 .mulisoft-section {
-	background: url(../img/MuleSoft-Page-Cover.png);
+	background: url(https://repo.cloudwaveinc.com/img/MuleSoft-Page-Cover.png);
 	background-color: #ccc;
 	background-repeat: no-repeat;
 	background-size: 100% 500px;
@@ -3369,7 +3384,7 @@ html.menu-opened body {
 		/* height: auto !important; */
 		background-color: #102a4c !important;
 		/* padding: 0 !important; */
-		background-image: url(../img/banner-imag-cover-tab.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/banner-imag-cover-tab.png);
 	}
 
 	.display-none-img {
@@ -3550,7 +3565,7 @@ html.menu-opened body {
 }
 
 .aws-banner {
-	background: url(../img/AWS-Page-Cover.png);
+	background: url(https://repo.cloudwaveinc.com/img/AWS-Page-Cover.png);
 	background-repeat: no-repeat;
 	background-size: 100% 400px;
 	background-position: center;
@@ -3558,7 +3573,7 @@ html.menu-opened body {
 }
 
 .google-cloud-platform-section {
-	background: url(../img/Google-Cloud-Platform/Google-Cloud-Platform-Page-Cover.png);
+	background: url(https://repo.cloudwaveinc.com/img/Google-Cloud-Platform/Google-Cloud-Platform-Page-Cover.png);
 	background-repeat: no-repeat;
 	background-size: 100% 400px;
 	background-position: center;
@@ -3567,7 +3582,7 @@ html.menu-opened body {
 
 
 .sanbox-section {
-	background: url(../img/Sandbox-Management-Page/Sandbox-Page-Cover.png);
+	background: url(https://repo.cloudwaveinc.com/img/Sandbox-Management-Page/Sandbox-Page-Cover.png);
 	background-repeat: no-repeat;
 	background-size: 100% 400px;
 	background-position: center;
@@ -3594,7 +3609,7 @@ html.menu-opened body {
 }
 
 .salesforce1 {
-	background: url(../img/Salesforce-Page/Salesforce-Page-Cover.png);
+	background: url(https://repo.cloudwaveinc.com/img/Salesforce-Page/Salesforce-Page-Cover.png);
 	background-repeat: no-repeat;
 	background-size: 100% 400px;
 	background-position: center;
@@ -3602,14 +3617,14 @@ html.menu-opened body {
 }
 
 .partners-section {
-	background: url(../img/Partners-Page-Cover.png);
+	background: url(https://repo.cloudwaveinc.com/img/Partners-Page-Cover.png);
 	background-repeat: no-repeat;
 	background-size: 100% 400px;
 	background-position: center;
 }
 
 .case-studies-section {
-	background: url(../img/Case-Studies-Page-Cover.png);
+	background: url(https://repo.cloudwaveinc.com/img/Case-Studies-Page-Cover.png);
 	background-repeat: no-repeat;
 	background-size: 100% 400px;
 	background-position: center;
@@ -3617,7 +3632,7 @@ html.menu-opened body {
 }
 
 .blog-section {
-	background: url(../img/Blogs-Page-Cover.png);
+	background: url(https://repo.cloudwaveinc.com/img/Blogs-Page-Cover.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -3625,35 +3640,35 @@ html.menu-opened body {
 }
 
 .about-us-section {
-	background: url(../img/About-Us-Page/About-Us-Page-Cover.png);
+	background: url(https://repo.cloudwaveinc.com/img/About-Us-Page/About-Us-Page-Cover.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 400px;
 }
 
 .news-events-section {
-	background: url(../img/News_Events-Page/News_Events-Page-Cover.png);
+	background: url(https://repo.cloudwaveinc.com/img/News_Events-Page/News_Events-Page-Cover.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 400px;
 }
 
 .clients-section {
-	background: url(../img/Clients-Page/Clients-Page-Cover.png);
+	background: url(https://repo.cloudwaveinc.com/img/Clients-Page/Clients-Page-Cover.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 400px;
 }
 
 .contact-us-section {
-	background: url(../img/Conact-Us-Page-Cover.png);
+	background: url(https://repo.cloudwaveinc.com/img/Conact-Us-Page-Cover.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 400px;
 }
 
 .azure-section {
-	background: url(../img/Azure-Page-Cover.png);
+	background: url(https://repo.cloudwaveinc.com/img/Azure-Page-Cover.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 400px;
@@ -3773,6 +3788,10 @@ html.menu-opened body {
 	padding-left: 25px;
 }
 
+/* .blog-ol-list ul li span {
+	font-weight: 500;
+} */
+
 .our-service-about-us-sec ul li {
 	font-size: 24px;
 	font-weight: 400;
@@ -3847,7 +3866,7 @@ SpaceBooking
 	padding-bottom: 30px;
 }
 .spacebooking-sec {
-	background: url(../img/Space-Booking-Page/Space-Booking-Page-Cover.png);
+	background: url(https://repo.cloudwaveinc.com/img/Space-Booking-Page/Space-Booking-Page-Cover.png);
 	background-color: #ccc;
 	background-repeat: no-repeat;
 	background-size: 100% 500px;
@@ -3900,6 +3919,227 @@ SpaceBooking
 	font-weight: normal;
 	color: #dc3545!important;
   }
+/*-----------------
+	Landing Page Banner
+-----------------------*/
+
+.banner-guide {
+	margin-top: 40px;
+	margin-bottom: 50px;
+	padding: 30px 0px;
+	position: relative;
+	background-color: #102A4C;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	z-index: 1;
+	height: auto;
+}
+
+
+.guide-img{
+	width: 75%;
+}
+
+.guide-heading{
+	font-size: 55px !important;
+	font-weight: 600 !important; 
+}
+
+.guide-subheading{
+	font-size: 40px !important;
+}
+
+.guide-content{
+	font-size: 25px !important;
+  	font-weight: 400 !important;
+}
+
+
+.download-form .form-group{
+	margin-bottom: 15px;
+}
+
+.download-form .form-group, lable{
+	color: #fff;
+}
+
+.download-form .form-group .form-control{
+	border-color: #ffffff;
+  	background-color: #ffffff;
+	font-size: 15px;
+	min-height: 40px;
+	padding: 3px 10px;
+	border-radius: 0;
+}
+
+.download-form .form-group input[type="text"], input[type="email"]{
+	color: #102A4C;
+}
+
+
+.download-form .btn-block{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+.block-sale-img img{
+		width: 90px;
+		float: left;
+}
+.block-sale-card{
+	border: 8px solid #e3e3e3;
+	border-radius: 0;
+}
+.block-sale-card .card-body{
+	padding: 20px;
+}
+.block-sale-img{
+	font-size: 22px;
+	font-weight: 500;
+	padding-bottom: 25px;
+}
+
+.block-sale-img .mr-3{
+	margin-right: 0.5rem !important;
+}
+
+.block-sale-card .card-body{
+	padding: 25px 15px 0 25px !important;
+}
+
+.block-sec-card{
+	padding: 0 30px 0 30px;
+}
+
+/* ---------------
+	Xcavate Page CSS
+---------------------*/
+.xcavate-sec {
+	background-image: url(https://repo.cloudwaveinc.com/img/xcavate/XCavate-Page-Cover.png);
+	background-color: #ccc;
+	background-repeat: no-repeat;
+	background-size: 100% 500px;
+	background-position: top; 
+}
+.xhead{
+	color: #f19125 !important;
+}
+.text-icon-content {
+	padding: 10px 0px 10px 30px !important;
+}
+
+.text-icon-content .card-title {
+	font-weight: 600 !important;
+	margin-top: -20px !important;
+}
+
+.icon-text-feature{
+	margin-top: -30px !important;
+}
+
+.xtext-icon{
+	max-width: 90px !important;
+}
+
+.icohead{
+	margin-left: -20px !important;
+	padding-top: 10px !important;
+}
+
+.xcavate-download{
+	text-decoration: underline;
+}
+.xcavate-download span{
+	text-transform: lowercase !important;
+}
+
+.dwnlod-text-xcavate{
+	margin-top: 50px;
+}
+
+.xlogo-sec{
+	max-width: 250px !important;
+	padding: 10px;
+}
+.xlogo{
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.xhead-sec{
+	margin-top: -15px !important;
+}
+
+.xcardhead{
+	font-weight: 600 !important;
+}
+.xfeature-body{
+	padding: 0px 0px 0 30px !important;
+}
+
+.xfeature-body .xcardhead{
+	font-size: 24px !important;
+}
+.xfeature-img{
+	width: 80% !important;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+.xno-margin{
+	margin-bottom: 0 !important;
+}
+
+/*-----------------
+	AI Page CSS
+-----------------------*/
+.ai-sec {
+	background-image: url(https://repo.cloudwaveinc.com/img/AI-Page/AI-Page-Cover.png);
+	background-color: #ccc;
+	background-repeat: no-repeat;
+	background-size: 100% 500px;
+	background-position: top; 
+}
+.ai-sec h2 {
+	font-size: 68px;
+	color: #fff !important;
+	font-weight: 900;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.ai-sec h4 {
+	font-size: 64px;
+	color: #FFFFFF;
+	font-weight: 900;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+.ai-banner-sub-text{
+	line-height: 1;
+	font-size: 52px !important;
+}
+
+.text-cayn{
+	color: #62aad0 !important;
+}
+.ai-img-wrap{
+    background-image: url(https://repo.cloudwaveinc.com/img/AI-Page/AI-Head.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+	margin-top: 70px !important;
+}
+
+.aicard-sub-head{
+	font-weight: 600 !important;
+}
 /*-----------------
 	Responsive
 -----------------------*/
@@ -3955,63 +4195,63 @@ SpaceBooking
 	}
 	.banner-section-1 {
 
-		background-image: url(../img/1920/1.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/1.png);
 	}
 	
 	
 
 	.cloud-integration-banner {
-		background-image: url(../img/1920/8.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/8.png);
 	}
 	.google-cloud-platform-section {
-		background-image: url(../img/1920/4.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/4.png);
 	}
 	.salesforce1 {
-		background-image: url(../img/1920/2.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/2.png);
 	}
 	.smartsheet-banner {
-		background-image: url(../img/1920/5.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/5.png);
 	}
 	.aws-banner {
-		background-image: url(../img/1920/6.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/6.png);
 	}
 	.azure-section {
-		background-image: url(../img/1920/7.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/7.png);
 	}
 	.spacebooking-sec {
-		background-image: url(../img/1920/10.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/10.png);
 	}
 	.sanbox-section {
-		background-image: url(../img/1920/9.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/9.png);
 	}
 	.partners-section {
-		background-image: url(../img/1920/11.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/11.png);
 	}
 	.case-studies-section {
-		background-image: url(../img/1920/12.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/12.png);
 	}
 
 	.about-us-section {
-		background-image: url(../img/1920/14.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/14.png);
 	}
 	.news-events-section {
-		background-image: url(../img/1920/15.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/15.png);
 	}
 	.clients-section {
-		background-image: url(../img/1920/16.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/16.png);
 	}
 	.careers-section {
-		background-image: url(../img/1920/17.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/17.png);
 	}
 	.blog-section {
-		background-image: url(../img/1920/13.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/13.png);
 	}
 	.contact-us-section {
-		background-image: url(../img/1920/18.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/18.png);
 	}
 	
 	.mulisoft-section {
-		background-image: url(../img/1920/3.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/1920/3.png);
 	}
 }
 @media only screen and (max-width: 1920.98px){
@@ -4026,6 +4266,9 @@ SpaceBooking
 	}
 	.img-div-partner {
 		height: 200px!important;
+	}
+	.explore-our-product-slider .card {
+		min-height: 53.5em;
 	}
 }
 @media only screen and (max-width: 1366.98px) {
@@ -4449,46 +4692,46 @@ SpaceBooking
 	.cloud-integration-banner {
 
 		background-size: 100% 400px;
-		background-image: url(../img/Cloud-Integration-Page-Cover.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Cloud-Integration-Page-Cover.png);
 		height: 300px !important;
 	}
 
 	.azure-section {
-		background: url(../img/Azure-Page-Cover.png);
+		background: url(https://repo.cloudwaveinc.com/img/Azure-Page-Cover.png);
 		background-position: center;
 		background-size: cover;
 	}
 
 	.google-cloud-platform-section {
-		background-image: url(../img/Google-Cloud-Platform/Google-Cloud-Platform-Page-Cover.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Google-Cloud-Platform/Google-Cloud-Platform-Page-Cover.png);
 	}
 
 	.mulisoft-section {
-		background-image: url(../img/MuleSoft-Page-Cover.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/MuleSoft-Page-Cover.png);
 	}
 
 	.salesforce1 {
-		background-image: url(../img/Salesforce-Page/Salesforce-Page-Cover.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Salesforce-Page/Salesforce-Page-Cover.png);
 	}
 
 	.smartsheet-banner {
-		background-image: url(../img/Smartsheet-Page/Smartsheet-Page-Cover.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Page/Smartsheet-Page-Cover.png);
 	}
 
 	.partners-section {
-		background: url(../img/Partners-Page-Cover.png);
+		background: url(https://repo.cloudwaveinc.com/img/Partners-Page-Cover.png);
 		background-position: center;
 		background-size: cover;
 	}
 
 	.case-studies-section {
-		background: url(../img/Case-Studies-Page-Cover.png);
+		background: url(https://repo.cloudwaveinc.com/img/Case-Studies-Page-Cover.png);
 		background-position: center;
 		background-size: cover;
 	}
 
 	.careers-section {
-		/* background: url(../img/Careers-Page/Careers-Page-Cover.png); */
+		/* background: url(https://repo.cloudwaveinc.com/img/Careers-Page/Careers-Page-Cover.png); */
 		background-position: center;
 		background-size: cover;
 	}
@@ -4537,7 +4780,7 @@ SpaceBooking
 	.smartsheet-capability-banner {
 		background-size: auto;
 		height: auto !important;
-		background-image: url(../img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover.png);
 	}
 }
 
@@ -4565,7 +4808,7 @@ SpaceBooking
 	.smartsheet-capability-banner {
 		background-size: auto;
 		height: auto !important;
-		background-image: url(../img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover.png);
 	}
 }
 
@@ -4722,7 +4965,7 @@ SpaceBooking
 
 	.careers-section {
 		background-size: 100% 400px;
-		background-image: url(../img/Careers-Page/Careers-Page-Cover.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Careers-Page/Careers-Page-Cover.png);
 	}
 
 	.news-events-section {
@@ -4755,12 +4998,12 @@ SpaceBooking
 
 
 	.azure-section {
-		background: url(../img/Azure-Page-Cover.png);
+		background: url(https://repo.cloudwaveinc.com/img/Azure-Page-Cover.png);
 		background-size: 100% 450px;
 	}
 
 	.aws-banner {
-		background-image: url(../img/AWS-Page-Cover.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/AWS-Page-Cover.png);
 	}
 
 	.banner-content h2 {
@@ -4772,7 +5015,7 @@ SpaceBooking
 	}
 
 	.mulisoft-section {
-		background-image: url(../img/MuleSoft-Page-Cover.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/MuleSoft-Page-Cover.png);
 	}
 
 	.schools-benefit-list li {
@@ -4785,7 +5028,7 @@ SpaceBooking
 	}
 
 	.blog-section {
-		background-image: url(../img/Blogs-Page-Cover.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Blogs-Page-Cover.png);
 	}
 
 	.review-user h2 {
@@ -5172,62 +5415,62 @@ SpaceBooking
 	}
 	.banner-section-1 {
 
-		background-image: url(../img/Tablet-Size/1.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/1.png);
 	}
 	
 	
 
 	.cloud-integration-banner {
-		background-image: url(../img/Tablet-Size/8.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/8.png);
 	}
 	.google-cloud-platform-section {
-		background-image: url(../img/Tablet-Size/4.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/4.png);
 	}
 	.salesforce1 {
-		background-image: url(../img/Tablet-Size/2.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/2.png);
 	}
 	.smartsheet-banner {
-		background-image: url(../img/Tablet-Size/5.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/5.png);
 	}
 	.aws-banner {
-		background-image: url(../img/Tablet-Size/6.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/6.png);
 	}
 	.azure-section {
-		background-image: url(../img/Tablet-Size/7.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/7.png);
 	}
 	.spacebooking-sec {
-		background-image: url(../img/Tablet-Size/10.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/10.png);
 	}
 	.sanbox-section {
-		background-image: url(../img/Tablet-Size/9.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/9.png);
 	}
 	.partners-section {
-		background-image: url(../img/Tablet-Size/11.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/11.png);
 	}
 	.case-studies-section {
-		background-image: url(../img/Tablet-Size/12.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/12.png);
 	}
 	.blog-section {
-		background-image: url(../img/Tablet-Size/13.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/13.png);
 	}
 	.about-us-section {
-		background-image: url(../img/Tablet-Size/14.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/14.png);
 	}
 	.news-events-section {
-		background-image: url(../img/Tablet-Size/15.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/15.png);
 	}
 	.clients-section {
-		background-image: url(../img/Tablet-Size/16.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/16.png);
 	}
 	.careers-section {
-		background-image: url(../img/Tablet-Size/17.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/17.png);
 	}
 	.contact-us-section {
-		background-image: url(../img/Tablet-Size/18.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/18.png);
 	}
 	
 	.mulisoft-section {
-		background-image: url(../img/Tablet-Size/3.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Tablet-Size/3.png);
 	}
 	.social-img-white.social-img-sec img {
 		width: 35px;
@@ -5246,7 +5489,7 @@ SpaceBooking
 	.smartsheet-capability-banner {
 		background-size: auto;
 		height: auto !important;
-		background-image: url(../img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover-tab.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover-tab.png);
 	}
 	.smartsheet-capability-banner {
 		padding: 30px 0 50px;
@@ -5683,7 +5926,7 @@ SpaceBooking
 	}
 
 	.aws-banner {
-		background-image: url(../img/AWS-Page-Cover.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/AWS-Page-Cover.png);
 	}
 
 	.box-square-img {
@@ -5800,7 +6043,7 @@ SpaceBooking
 	.smartsheet-capability-banner {
 		background-size: auto;
 		height: auto !important;
-		background-image: url(../img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover.png);
 	}
 }
 
@@ -6221,7 +6464,7 @@ SpaceBooking
 	}
 
 	.salesforce2 {
-		background: url(../img/SALESFORCE-responsive1.jpg);
+		background: url(https://repo.cloudwaveinc.com/img/SALESFORCE-responsive1.jpg);
 		background-repeat: no-repeat;
 		background-size: 100% 250px;
 		background-position: center;
@@ -6239,30 +6482,30 @@ SpaceBooking
 	.cloud-integration-banner {
 		background-size: 100% 350px;
 		height: 350px !important;
-		background-image: url(../img/Mobile-Size/8.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/8.png);
 	}
 	.smartsheet-capability-banner {
 		background-size: auto;
 		height: auto !important;
-		background-image: url(../img/Smartsheet-Capabilities-Page/smartsheet-capability-cover-mobile.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Capabilities-Page/smartsheet-capability-cover-mobile.png);
 	}
 	.aws-banner {
-		background-image: url(../img/Mobile-Size/6.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/6.png);
 	}
 	.partners-section {
 		background-size: 100% 240px;
 		height: 240px !important;
-		background-image: url(../img/Mobile-Size/11.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/11.png);
 	}
 
 	.case-studies-section {
-		background-image: url(../img/Case-Studies-Page-Cover.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Case-Studies-Page-Cover.png);
 		background-size: 100% 190px;
 		height: 190px !important;
 	}
 
 	.salesforce1 {
-		background: url(../img/Mobile-Size/2.png);
+		background: url(https://repo.cloudwaveinc.com/img/Mobile-Size/2.png);
 		background-size: 100% 295px;
      height: 295px !important;
 	}
@@ -6274,7 +6517,7 @@ SpaceBooking
 		/* background-color: #ededed; */
 		height: auto;
 		background-repeat: no-repeat;
-		background-image: url(../img/Mobile-Size/1.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/1.png);
 	}
 	.spacebooking-sec {
 		
@@ -6283,7 +6526,7 @@ SpaceBooking
 		background-position: center;
 		padding-top: 65px;
 		height: 250px!important;
-		background-image: url(../img/Mobile-Size/10.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/10.png);
 	}
 	.w-image-space {
 		width: 90% !important;
@@ -6501,10 +6744,10 @@ SpaceBooking
 		background-position: inherit;
 		background-size: 100% 250px;
 		height: 250px !important;
-		background-image: url(../img/Mobile-Size/17.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/17.png);
 	}
 	.contact-us-section {
-		background-image: url(../img/Mobile-Size/18.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/18.png);
 		background-size: 100% 250px;
 		height: 250px !important;
 	}
@@ -6512,7 +6755,7 @@ SpaceBooking
 		width: 100%;
 		background-size: 100% 250px !important;
 		margin-bottom: 0;
-		background-image: url(../img/Mobile-Size/3.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/3.png);
 	}
 	.explore-our-product-section {
 		padding: 15px!important;
@@ -6531,26 +6774,26 @@ SpaceBooking
 	.case-studies-section {
 		background-position: center;
 		margin-bottom: 10px;
-		background-image: url(../img/Mobile-Size/12.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/12.png);
 	}
 
 	.blog-section {
 		background-position: right;
 		background-size: cover;
-		background-image: url(../img/Mobile-Size/13.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/13.png);
 	}
 	.about-us-section { 
-		background-image: url(../img/Mobile-Size/14.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/14.png);
 		background-size: 100% 250px;
 		height: 250px!important;
 	}
 	.news-events-section {
-		background-image: url(../img/Mobile-Size/15.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/15.png);
 		background-size: 100% 250px;
 		height: 250px!important;
 	}
 	.clients-section {
-		background-image: url(../img/Mobile-Size/16.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/16.png);
 		background-size: 100% 295px;
 		height: 295px;
 	}
@@ -6736,7 +6979,7 @@ SpaceBooking
 	.sanbox-section {
 		background-size: 100% 250px;
 		height: 250px !important;
-		background-image: url(../img/Mobile-Size/9.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/9.png);
 	}
 	.sanbox-section .container-fluid{
 		margin: auto;
@@ -6759,7 +7002,7 @@ SpaceBooking
 		background-size: contain;
 		background-color: #15b2d5;
 
-		background-image: url(../img/Mobile-Size/5.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/5.png);
 		background-repeat: no-repeat;
 
 	}
@@ -6860,17 +7103,17 @@ SpaceBooking
 
 	.cloud-integration-banner {
 		background-color: #62AAD0;
-		/* background-image: url(../img/CloudIntegrationServices.jpg); */
-		/* background-image: url(../img/AWS-Page-Cover.png); */
+		/* background-image: url(https://repo.cloudwaveinc.com/img/CloudIntegrationServices.jpg); */
+		/* background-image: url(https://repo.cloudwaveinc.com/img/AWS-Page-Cover.png); */
 		background-size: 100% 250px;
 		background-repeat: no-repeat;
 		height: 250px !important;
 	}
 	.google-cloud-platform-section {
-		background-image: url(../img/Mobile-Size/4.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Mobile-Size/4.png);
 	}
 	.azure-section {
-		background: url(../img/Mobile-Size/7.png);
+		background: url(https://repo.cloudwaveinc.com/img/Mobile-Size/7.png);
 		background-size: cover;
 	}
 	.copyright-text {
@@ -6879,7 +7122,7 @@ SpaceBooking
 	.smartsheet-capability-banner {
 		background-size: auto;
 		height: auto !important;
-		background-image: url(../img/Smartsheet-Capabilities-Page/smartsheet-capability-cover-mobile.png);
+		background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Capabilities-Page/smartsheet-capability-cover-mobile.png);
 	}
 	.feature-client-slider {
 		padding: 15px;
@@ -6902,4 +7145,68 @@ SpaceBooking
 }
 @media only screen and (max-width: 430.98px){
 	
+}
+
+
+	/*-----------------
+	Landing Page Banner Mobile Rsponsive
+-----------------------*/
+
+@media only screen and (max-width: 480px) {
+
+	.banner-guide {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		padding: 20px 0px;
+	}
+	.guide-img{
+		width: 50%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.guide-heading{
+		font-size: 35px !important;
+		margin-top: 20px;
+		margin-bottom: 20px; 
+	}
+
+	.guide-subheading{
+		font-size: 25px !important;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.guide-content{
+		font-size: 16px !important;
+	}
+
+
+	.download-form .form-group{
+		margin-bottom: 15px;
+	}
+
+	.download-form .form-group, lable{
+		font-size: 16px;
+	}
+
+	.download-form .btn-block{
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30px;
+	}
+
+	.block-sale-img img{
+		width: 40px;
+		float: left;
+	}
+
+	.block-sale-img{
+		font-size: 18px;
+		font-weight: 500;
+		padding-bottom: 15px;
+	}
+
 }
