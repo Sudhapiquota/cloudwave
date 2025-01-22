@@ -180,7 +180,7 @@ const PREVIEW_LOOKUP = {
     17: {
         t: "Space Booking",
         p: "Streamline Your Coworking Reservation System<br><br>Powered by Google AppSheet, the Space Booking app allows you to seamlessly integrate your office space with your calendar to make workspace reservations simple for everyone. Reserve conference rooms, locate colleagues, and customize access in our full-service system.",
-        l: "../spacebooking/",
+        l: "../space-booking/",
     },
 
 };
