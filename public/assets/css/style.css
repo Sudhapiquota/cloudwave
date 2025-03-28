@@ -7075,6 +7075,13 @@ SpaceBooking
 	.footer .footer-top .footer-title {
 		font-size: 14px;
 	}
+	.ai-sec.banner-section {
+		background-position: bottom !important;
+		background-size: cover !important;
+        background-repeat: no-repeat;
+        height: 250px !important;
+        background-image: url(https://repo.cloudwaveinc.com/img/AI-Page/AI%20Page%20Cover%20Mobile.png);
+	}
 }
 
 
