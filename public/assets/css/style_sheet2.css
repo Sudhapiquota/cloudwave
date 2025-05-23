@@ -1025,3 +1025,72 @@
 	}
 
 }
+
+
+
+
+/* Creatio */
+
+.creatio-logo {
+    width: 290px;
+}
+
+.creatio-icon-img {
+	width: 38% !important;
+}
+
+
+.creatio-sec {
+	background-image: url(https://repo.cloudwaveinc.com/img/home-page/Creatio%20Page%20Cover.png);
+	background-color: #ccc;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top; 
+}
+
+.custom-bullet-points-img{
+    width: 30px;
+	height: 30px; 
+	margin-right: 0.6rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	.creatio-icon-img {
+	width: 40% !important;
+	margin-bottom: 20px;
+	margin: 0 auto 20px auto;
+	display: block;
+}
+}
+
+
+@media only screen and (max-width: 991.98px) {
+	.creatio-icon-img {
+	width: 40% !important;
+	margin: 0 auto 20px auto;
+	display: block;
+}
+
+
+}
+
+/* @media only screen and (max-width: 767.98px) {
+
+} */
+
+
+@media only screen and (max-width: 575.98px) {
+	 .creatio-icon-img {
+	width: 98% !important;
+	margin-bottom: 20px;
+}
+
+.creatio-sec.banner-section {
+		background-position: bottom !important;
+		background-size: 100% 230px;
+        background-repeat: no-repeat;
+        height: 250px !important;
+        background-image: url(https://repo.cloudwaveinc.com/img/home-page/Creatio%20Page%20Cover%20Mobile.png);
+	}
+}
