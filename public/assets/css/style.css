@@ -7180,11 +7180,17 @@ SpaceBooking
 	margin-bottom: 20px;
     }
     .creatio-sec.banner-section {
-		background-position: bottom !important;
+		/* background-position: bottom !important;
 		background-size: 100% 230px;
         background-repeat: no-repeat;
-        height: 250px !important;
+        height: 250px !important; */
         background-image: url(https://repo.cloudwaveinc.com/img/home-page/Creatio%20Page%20Cover%20Mobile.png);
+		        background-position: bottom !important;
+        /* background-size: cover !important; */
+        background-repeat: no-repeat;
+       
+        height: auto !important;
+        min-height: 240px;
 	}
 	.creatio-logo {
     display: block;
