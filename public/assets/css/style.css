@@ -4140,6 +4140,40 @@ SpaceBooking
 .aicard-sub-head{
 	font-weight: 600 !important;
 }
+
+
+/*-----------------
+	CREATIO Page CSS
+-----------------------*/
+
+.creatio-logo {
+    width: 290px;
+	margin-left: 20px;
+}
+
+.creatio-service-heading{
+	margin-left: 20px;
+}
+
+.creatio-icon-img {
+	width: 38% !important;
+}
+
+
+.creatio-sec {
+	background-image: url(https://repo.cloudwaveinc.com/img/home-page/Creatio%20Page%20Cover.png);
+	background-color: #ccc;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.custom-bullet-points-img{
+    width: 30px;
+	height: 30px; 
+	margin-right: 0.6rem;
+}
+
+
 /*-----------------
 	Responsive
 -----------------------*/
@@ -4603,6 +4637,14 @@ SpaceBooking
 	.margin-btm-sec {
 		margin-bottom: 40px;
 	}
+
+	.creatio-sec {
+	background-image: url(https://repo.cloudwaveinc.com/img/home-page/Creatio%20Page%20Cover.png);
+	background-color: #ccc;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left; 
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -4782,6 +4824,13 @@ SpaceBooking
 		height: auto !important;
 		background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover.png);
 	}
+
+	.creatio-icon-img {
+	width: 40% !important;
+	margin-bottom: 20px;
+	margin: 0 auto 20px auto;
+	display: block;
+    }
 }
 
 @media only screen and (min-width: 991.98px) {
@@ -5494,6 +5543,19 @@ SpaceBooking
 	.smartsheet-capability-banner {
 		padding: 30px 0 50px;
 	}
+
+	.creatio-icon-img {
+	width: 40% !important;
+	margin: 0 auto 20px auto;
+	display: block;
+   }
+   .creatio-sec.banner-section {
+		background-position: bottom !important;
+		background-size: 100% 230px;
+        background-repeat: no-repeat;
+        height: 250px !important;
+        background-image: url(https://repo.cloudwaveinc.com/img/home-page/Creatio%20Page%20Cover.png);
+	}
 }
 
 @media only screen and (max-width: 849.98px) {
@@ -6044,6 +6106,14 @@ SpaceBooking
 		background-size: auto;
 		height: auto !important;
 		background-image: url(https://repo.cloudwaveinc.com/img/Smartsheet-Capabilities-Page/Smartsheet-Capability-Cover.png);
+	}
+
+	.creatio-sec.banner-section {
+		background-position: bottom !important;
+		background-size: 100% 230px;
+        background-repeat: no-repeat;
+        height: 240px !important;
+        background-image: url(https://repo.cloudwaveinc.com/img/home-page/Creatio%20Page%20Cover.png);
 	}
 }
 
@@ -7082,6 +7152,27 @@ SpaceBooking
         height: 250px !important;
         background-image: url(https://repo.cloudwaveinc.com/img/AI-Page/AI%20Page%20Cover%20Mobile.png);
 	}
+
+	.creatio-icon-img {
+	width: 98% !important;
+	margin-bottom: 20px;
+    }
+    .creatio-sec.banner-section {
+		background-position: bottom !important;
+		background-size: 100% 230px;
+        background-repeat: no-repeat;
+        height: 250px !important;
+        background-image: url(https://repo.cloudwaveinc.com/img/home-page/Creatio%20Page%20Cover%20Mobile.png);
+	}
+	.creatio-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 340px;
+    }
+    .creatio-service-heading{
+	text-align: center;
+    }
 }
 
 
@@ -7305,3 +7396,9 @@ SpaceBooking
 		grid-template-columns: repeat(1, minmax(120px, 1fr));
 	}
 }
+
+
+
+
+
+
