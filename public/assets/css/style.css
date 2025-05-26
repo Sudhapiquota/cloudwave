@@ -4161,6 +4161,7 @@ SpaceBooking
 
 .creatio-service-icon-img{
 	width: 12% !important;
+	margin-right: 15px;
 }
 
 .creatio-sec {
@@ -7181,9 +7182,9 @@ SpaceBooking
     }
     .creatio-sec.banner-section {
 		background-position: bottom !important;
-		background-size: 100% 230px;
+		background-size: 100% 70%;
         background-repeat: no-repeat;
-        height: 250px !important;
+        height: 200px !important;
         background-image: url(https://repo.cloudwaveinc.com/img/home-page/Creatio%20Page%20Cover%20Mobile.png);
 	}
 	.creatio-logo {
@@ -7195,7 +7196,21 @@ SpaceBooking
     .creatio-service-heading{
 	text-align: center;
     }
+
+	.creatio-service-icon-img {
+  width: 50% !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.creatio-img{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+}
+
 
 
 @media only screen and (max-width: 479px) {
